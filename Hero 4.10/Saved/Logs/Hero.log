@@ -1,1444 +1,366 @@
-﻿[2016.01.29-05.20.49:738][  0]Log file open, 01/29/16 14:20:49
-[2016.01.29-05.20.49:738][  0]LogInit:Display: Running engine for game: Hero
-[2016.01.29-05.20.49:738][  0]LogPlatformFile: Not using cached read wrapper
-[2016.01.29-05.20.49:738][  0]LogInit:Display: RandInit(1659018409) SRandInit(1659018410).
-[2016.01.29-05.20.49:738][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
-[2016.01.29-05.20.49:738][  0]LogStats: Stats thread started at 0.173402
-[2016.01.29-05.20.49:738][  0]LogInit: Version: 4.10.2-2818068+++depot+UE4-Releases+4.10
-[2016.01.29-05.20.49:738][  0]LogInit: API Version: 2758231
-[2016.01.29-05.20.49:738][  0]LogInit: Compiled (64-bit): Jan  6 2016 17:36:42
-[2016.01.29-05.20.49:738][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
-[2016.01.29-05.20.49:738][  0]LogInit: Build Configuration: Development
-[2016.01.29-05.20.49:738][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
-[2016.01.29-05.20.49:739][  0]LogInit: Command line:  
-[2016.01.29-05.20.49:739][  0]LogInit: Base directory: C:/Program Files/Epic Games/4.10/Engine/Binaries/Win64/
-[2016.01.29-05.20.49:739][  0]LogInit: Rocket: 1
-[2016.01.29-05.20.49:830][  0]LogInit: Using libcurl 7.41.0
-[2016.01.29-05.20.49:830][  0]LogInit:  - built for x86_64-pc-win32
-[2016.01.29-05.20.49:830][  0]LogInit:  - supports SSL with WinSSL
-[2016.01.29-05.20.49:830][  0]LogInit:  - other features:
-[2016.01.29-05.20.49:830][  0]LogInit:      CURL_VERSION_SSL
-[2016.01.29-05.20.49:830][  0]LogInit:      CURL_VERSION_IPV6
-[2016.01.29-05.20.49:830][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2016.01.29-05.20.49:830][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2016.01.29-05.20.49:830][  0]LogInit:      CURL_VERSION_IDN
-[2016.01.29-05.20.49:830][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2016.01.29-05.20.49:830][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2016.01.29-05.20.49:830][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2016.01.29-05.20.49:830][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2016.01.29-05.20.49:830][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-[2016.01.29-05.20.49:908][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2016.01.29-05.20.49:913][  0]LogInit: Object subsystem initialized
-[2016.01.29-05.20.49:914][  0]LogInit: Selected Device Profile: [Windows]
-[2016.01.29-05.20.49:914][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.01.29-05.20.49:921][  0]LogInit: Computer: MUHONI
-[2016.01.29-05.20.49:921][  0]LogInit: User: 광효
-[2016.01.29-05.20.49:921][  0]LogInit: CPU Page size=4096, Cores=4
-[2016.01.29-05.20.49:921][  0]LogInit: High frequency timer resolution =3.416972 MHz
-[2016.01.29-05.20.49:921][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
-[2016.01.29-05.20.49:921][  0]LogMemory: Platform Memory Stats for Windows
-[2016.01.29-05.20.49:921][  0]LogMemory: Process Physical Memory: 55.00 MB used, 55.00 MB peak
-[2016.01.29-05.20.49:921][  0]LogMemory: Process Virtual Memory: 57.64 MB used, 57.64 MB peak
-[2016.01.29-05.20.49:921][  0]LogMemory: Physical Memory: 2958.15 MB used, 8111.04 MB total
-[2016.01.29-05.20.49:921][  0]LogMemory: Virtual Memory: 364.59 MB used, 134217728.00 MB total
-[2016.01.29-05.20.50:624][  0]LogTextLocalizationManager: No specific translations for ('ko-KR') exist, so ('ko') translations will be used.
-[2016.01.29-05.20.50:655][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:InternalTimeAccumulator):
-Localization Resource: (C:/Program Files/Epic Games/4.10/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용되는 누적 시간입니다.)
-Localization Resource: (C:/Program Files/Epic Games/4.10/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
-[2016.01.29-05.20.50:655][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:bIgnoreForRelevancyTest):
-Localization Resource: (C:/Program Files/Epic Games/4.10/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (319969718) Localized String: (True 면, 스테이트에서 최고 가중치 애니메이션을 찾는 "Relevant anim" 노드는 이 노드를 무시합니다.
+﻿[2016.02.01-07.27.09:551][  0]Log file open, 02/01/16 16:27:09
+[2016.02.01-07.27.09:551][  0]LogInit:Display: Running engine for game: Hero
+[2016.02.01-07.27.09:551][  0]LogPlatformFile: Not using cached read wrapper
+[2016.02.01-07.27.09:551][  0]LogInit:Display: RandInit(1999103699) SRandInit(1999103701).
+[2016.02.01-07.27.09:551][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2016.02.01-07.27.09:551][  0]LogStats: Stats thread started at 0.120692
+[2016.02.01-07.27.09:551][  0]LogInit: Version: 4.10.2-2818068+++depot+UE4-Releases+4.10
+[2016.02.01-07.27.09:552][  0]LogInit: API Version: 2758231
+[2016.02.01-07.27.09:552][  0]LogInit: Compiled (64-bit): Jan  6 2016 17:36:42
+[2016.02.01-07.27.09:552][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
+[2016.02.01-07.27.09:552][  0]LogInit: Build Configuration: Development
+[2016.02.01-07.27.09:552][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
+[2016.02.01-07.27.09:552][  0]LogInit: Command line:  
+[2016.02.01-07.27.09:552][  0]LogInit: Base directory: F:/Epic Games/4.10/Engine/Binaries/Win64/
+[2016.02.01-07.27.09:552][  0]LogInit: Rocket: 1
+[2016.02.01-07.27.09:583][  0]LogInit: Using libcurl 7.41.0
+[2016.02.01-07.27.09:583][  0]LogInit:  - built for x86_64-pc-win32
+[2016.02.01-07.27.09:583][  0]LogInit:  - supports SSL with WinSSL
+[2016.02.01-07.27.09:583][  0]LogInit:  - other features:
+[2016.02.01-07.27.09:583][  0]LogInit:      CURL_VERSION_SSL
+[2016.02.01-07.27.09:583][  0]LogInit:      CURL_VERSION_IPV6
+[2016.02.01-07.27.09:583][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.02.01-07.27.09:583][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.02.01-07.27.09:583][  0]LogInit:      CURL_VERSION_IDN
+[2016.02.01-07.27.09:583][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.02.01-07.27.09:583][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.02.01-07.27.09:583][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.02.01-07.27.09:583][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.02.01-07.27.09:583][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2016.02.01-07.27.09:636][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.02.01-07.27.09:643][  0]LogInit: Object subsystem initialized
+[2016.02.01-07.27.09:644][  0]LogInit: Selected Device Profile: [Windows]
+[2016.02.01-07.27.09:644][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.02.01-07.27.09:658][  0]LogInit: Computer: SGH-PC
+[2016.02.01-07.27.09:658][  0]LogInit: User: SGH
+[2016.02.01-07.27.09:658][  0]LogInit: CPU Page size=4096, Cores=4
+[2016.02.01-07.27.09:658][  0]LogInit: High frequency timer resolution =3.215449 MHz
+[2016.02.01-07.27.09:658][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2016.02.01-07.27.09:658][  0]LogMemory: Platform Memory Stats for Windows
+[2016.02.01-07.27.09:658][  0]LogMemory: Process Physical Memory: 56.91 MB used, 56.91 MB peak
+[2016.02.01-07.27.09:658][  0]LogMemory: Process Virtual Memory: 56.61 MB used, 56.61 MB peak
+[2016.02.01-07.27.09:658][  0]LogMemory: Physical Memory: 3293.89 MB used, 8174.71 MB total
+[2016.02.01-07.27.09:658][  0]LogMemory: Virtual Memory: 350.18 MB used, 8388608.00 MB total
+[2016.02.01-07.27.09:785][  0]LogTextLocalizationManager: No specific translations for ('ko-KR') exist, so ('ko') translations will be used.
+[2016.02.01-07.27.09:829][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:InternalTimeAccumulator):
+Localization Resource: (F:/Epic Games/4.10/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용되는 누적 시간입니다.)
+Localization Resource: (F:/Epic Games/4.10/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
+[2016.02.01-07.27.09:830][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:bIgnoreForRelevancyTest):
+Localization Resource: (F:/Epic Games/4.10/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (319969718) Localized String: (True 면, 스테이트에서 최고 가중치 애니메이션을 찾는 "Relevant anim" 노드는 이 노드를 무시합니다.
  )
-Localization Resource: (C:/Program Files/Epic Games/4.10/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (319969718) Localized String: (True 면 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" 노드가 무시됩니다.
+Localization Resource: (F:/Epic Games/4.10/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (319969718) Localized String: (True 면 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" 노드가 무시됩니다.
  )
-[2016.01.29-05.20.50:655][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:BlendWeight):
-Localization Resource: (C:/Program Files/Epic Games/4.10/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 마지막 걸린 블렌드웨이트 입니다.)
-Localization Resource: (C:/Program Files/Epic Games/4.10/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 대해 마지막 접한 블렌드 웨이트)
-[2016.01.29-05.20.50:845][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 970 (Feature Level 11_0)
-[2016.01.29-05.20.50:845][  0]LogD3D11RHI: Adapter has 3991MB of dedicated video memory, 0MB of dedicated system memory, and 4055MB of shared system memory, 1 output[s]
-[2016.01.29-05.20.50:846][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
-[2016.01.29-05.20.50:846][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 256MB of shared system memory, 0 output[s]
-[2016.01.29-05.20.50:846][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2016.01.29-05.20.50:851][  0]LogD3D11RHI: !Direct3DDevice
-[2016.01.29-05.20.50:851][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2016.01.29-05.20.50:862][  0]LogD3D11RHI: Async texture creation enabled
-[2016.01.29-05.20.50:902][  0]LogShaderCompilers: Guid format shader working directory is 2 characters bigger than the processId version (../../../../../../Herose-defend/Hero 4.10/Intermediate/Shaders/WorkingDirectory/8572/).
-[2016.01.29-05.20.50:902][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/광효/AppData/Local/Temp/UnrealShaderWorkingDir/C20D65204C381DC4AF0D5C813E95EE2E/'.
-[2016.01.29-05.20.50:902][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.01.29-05.20.53:727][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.01.29-05.20.53:759][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.01.29-05.20.53:794][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.01.29-05.20.53:833][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.01.29-05.20.53:844][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.01.29-05.20.53:870][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.01.29-05.20.53:913][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.01.29-05.20.53:928][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.01.29-05.20.53:937][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.01.29-05.20.53:981][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.01.29-05.20.53:991][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.01.29-05.20.54:012][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.01.29-05.20.54:012][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.01.29-05.20.54:018][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.01.29-05.20.54:137][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.01.29-05.20.54:182][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.01.29-05.20.54:191][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.01.29-05.20.54:238][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.01.29-05.20.54:238][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.01.29-05.20.55:323][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.01.29-05.20.55:648][  0]LogDerivedDataCache: Loaded boot cache 0.33s 45MB C:/Users/광효/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.01.29-05.20.55:648][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/광효/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
-[2016.01.29-05.20.55:648][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Herose-defend/Hero 4.10/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.01.29-05.20.55:648][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.01.29-05.20.55:649][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Herose-defend/Hero 4.10/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.01.29-05.20.55:649][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.01.29-05.20.55:741][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.01.29-05.20.55:760][  0]LogDerivedDataCache: Using Local data cache path C:/Users/광효/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.01.29-05.20.59:355][  0]LogInit: Selected Device Profile: [Windows]
-[2016.01.29-05.20.59:357][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2016.01.29-05.20.59:682][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.01.29-05.20.59:682][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.01.29-05.21.00:883][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.01.29-05.21.17:475][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.01.29-05.21.18:407][  0]LogAssetRegistry: FAssetRegistry took 0.0107 seconds to start up
-[2016.01.29-05.21.22:834][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2016.01.29-05.21.22:836][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2016.01.29-05.21.23:296][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2016.01.29-05.21.23:435][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2016.01.29-05.21.25:906][  0]LogObj: 28633 objects as part of root set at end of initial load.
-[2016.01.29-05.21.25:906][  0]LogUObjectAllocator: 6099752 out of 0 bytes used by permanent object pool.
-[2016.01.29-05.21.26:176][  0]LogEngine: Initializing Engine...
-[2016.01.29-05.21.26:181][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.01.29-05.21.26:263][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2016.01.29-05.21.26:722][  0]LogAIModule: Creating AISystem for world NewWorld
-[2016.01.29-05.21.26:783][  0]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.01.29-05.21.26:807][  0]LogInit: FAudioDevice initialized.
-[2016.01.29-05.21.26:836][  0]LogDerivedDataCache: Saved boot cache 0.03s 45MB C:/Users/광효/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.01.29-05.21.26:841][  0]LogInit: Texture streaming: Enabled
-[2016.01.29-05.21.26:929][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2016.01.29-05.21.26:929][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.2-2818068+++depot+UE4-Releases+4.10
-[2016.01.29-05.21.26:930][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId bf528e5c41832c6ec28b6c83c6d29d3f|1ee373e9bedc4d7e9c76f780c6814fe5|934ea0c9-e0aa-4515-afbd-b4d0f5b0f41d
-[2016.01.29-05.21.26:930][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
-[2016.01.29-05.21.26:961][  0]LogInit: Transaction tracking system initialized
-[2016.01.29-05.21.27:369][  0]BlueprintLog: New page: 에디터 로드
-[2016.01.29-05.21.29:460][  0]LocalizationService: 정보 현지화 서비스가 비활성화되었습니다.
-[2016.01.29-05.21.30:578][  0]LogConsoleResponse:Display: 
-[2016.01.29-05.21.34:022][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2016.01.29-05.21.35:471][  0]LogFileCache: Scanning file cache for directory 'C:/Herose-defend/Hero 4.10/Content/' took 0.03s
-[2016.01.29-05.21.35:863][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2016.01.29-05.21.35:863][  0]Cmd: MAP LOAD FILE="../../../../../../Herose-defend/Hero 4.10/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.01.29-05.21.35:941][  0]LightingResults: New page: 라이팅 빌드
-[2016.01.29-05.21.35:945][  0]MapCheck: New page: 맵 체크
-[2016.01.29-05.21.35:945][  0]LightingResults: New page: 라이팅 빌드
-[2016.01.29-05.21.35:953][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000EFB0ECFB00
-[2016.01.29-05.21.48:777][  0]LogAIModule: Creating AISystem for world Minimal_Default
-[2016.01.29-05.21.50:082][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.01.29-05.21.50:082][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.01.29-05.21.50:226][  0]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 143.551ms.
-[2016.01.29-05.21.50:226][  0]LogFileHelpers: Loading map 'Minimal_Default' took 14.363
-[2016.01.29-05.21.50:466][  0]LogCollectionManager: Loaded 0 collections in 0.002668 seconds
-[2016.01.29-05.21.50:508][  0]LogFileCache: Scanning file cache for directory 'C:/Herose-defend/Hero 4.10/Saved/Collections/' took 0.01s
-[2016.01.29-05.21.50:508][  0]LogFileCache: Scanning file cache for directory 'C:/Herose-defend/Hero 4.10/Content/Developers/광효/Collections/' took 0.01s
-[2016.01.29-05.21.50:508][  0]LogFileCache: Scanning file cache for directory 'C:/Herose-defend/Hero 4.10/Content/Collections/' took 0.01s
-[2016.01.29-05.21.50:508][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
-[2016.01.29-05.21.50:514][  0]LogContentBrowser: Native class hierarchy populated in 0.0062 seconds. Added 1893 classes and 338 folders.
-[2016.01.29-05.21.50:522][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2016.01.29-05.21.52:016][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2016.01.29-05.21.52:058][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2016.01.29-05.21.52:297][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.01.29-05.21.52:301][  0]LogUObjectGlobals:Warning: 'Class 없음.' 오브젝트를 찾는 데 실패했습니다.
-[2016.01.29-05.21.52:324][  0]LogLoad: Full Startup: 63.94 seconds (BP compile: 0.06 seconds)
-[2016.01.29-05.21.52:338][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
-[2016.01.29-05.21.52:345][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.01.29-05.21.52:801][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2016.01.29-05.21.53:101][  0]LogRenderer: Reallocating scene render targets to support 1376x644 (Frame:2).
-[2016.01.29-05.21.53:234][  1]Cmd: UpdateLandscapeEditorData -warnings
-[2016.01.29-05.21.53:622][  4]LogAssetRegistry: Asset discovery search completed in 35.2258 seconds
-[2016.01.29-05.21.53:622][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2016.01.29-05.21.53:622][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000032 seconds (updated 0 objects)
-[2016.01.29-05.22.05:770][866]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-05.22.06:267][877]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-05.22.06:999][959]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.22.29:274][ 98]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-05.22.29:906][171]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.22.30:647][241]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.22.31:617][324]LogEditorViewport: Clicking on Component (context menu): StaticMeshComponent (Sky Sphere mesh)
-[2016.01.29-05.26.50:224][818]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-05.26.51:017][907]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.27.02:072][139]LogRenderer: Reallocating scene render targets to support 1432x960 (Frame:7430).
-[2016.01.29-05.27.30:933][458]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-05.27.32:038][586]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-05.27.32:504][638]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.27.33:098][702]LogEditorViewport: Clicking on Component (context menu): StaticMeshComponent (Sky Sphere mesh)
-[2016.01.29-05.27.38:109][189]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.27.38:788][252]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.27.39:726][343]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.27.40:577][422]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.27.41:476][520]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.27.42:181][583]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.27.43:005][672]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.27.43:642][728]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.27.44:706][847]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.27.45:210][891]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.27.46:259][  6]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.27.46:845][ 55]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.27.47:583][134]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.27.47:993][169]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.27.48:909][270]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.27.49:306][304]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.27.50:630][454]Cmd: DELETE
-[2016.01.29-05.27.50:630][454]Cmd: ACTOR DELETE
-[2016.01.29-05.27.50:635][454]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-05.27.50:650][454]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000EFE9533880
-[2016.01.29-05.27.50:655][454]LogEditorActor: Deleted 1 Actors (0.025 secs)
-[2016.01.29-05.27.52:324][651]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.27.53:843][813]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.27.54:908][931]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.27.55:433][976]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.27.56:274][ 67]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.27.56:657][ 99]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.27.57:442][182]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.27.58:063][236]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.27.58:889][326]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.27.59:485][375]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.28.00:304][463]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.28.00:763][501]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.28.03:084][768]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.28.03:698][820]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.28.04:441][899]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.28.05:099][956]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.28.06:100][ 65]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.28.06:597][107]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.28.07:200][169]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.28.09:409][363]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.28.11:016][546]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.28.12:675][693]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.28.13:457][779]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.28.13:877][825]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.29.39:195][ 41]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_1)
-[2016.01.29-05.29.39:700][ 95]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.29.40:058][130]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-05.29.40:548][181]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.29.42:082][295]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_2)
-[2016.01.29-05.29.49:494][120]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_1)
-[2016.01.29-05.30.04:271][677]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_10)
-[2016.01.29-05.30.12:364][552]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.30.15:280][839]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_10)
-[2016.01.29-05.30.20:295][403]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.30.21:033][487]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.30.25:368][882]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-05.30.25:988][948]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.30.29:486][251]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.30.40:334][258]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_10)
-[2016.01.29-05.31.01:018][232]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-05.31.02:040][344]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.31.04:410][537]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_15)
-[2016.01.29-05.31.24:603][732]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.31.25:881][879]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_15)
-[2016.01.29-05.31.32:702][677]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.31.51:836][774]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_14)
-[2016.01.29-05.32.01:911][864]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_9)
-[2016.01.29-05.32.16:795][465]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.32.25:994][363]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_4)
-[2016.01.29-05.32.27:994][574]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_18)
-[2016.01.29-05.32.40:924][ 54]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.32.47:020][635]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_17)
-[2016.01.29-05.32.53:611][345]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_4)
-[2016.01.29-05.33.04:143][531]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.33.05:267][661]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_4)
-[2016.01.29-05.33.22:567][626]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.33.25:044][848]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.33.29:739][225]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_4)
-[2016.01.29-05.33.37:492][131]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.33.46:257][861]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_17)
-[2016.01.29-05.33.54:894][829]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.33.56:311][994]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_17)
-[2016.01.29-05.34.04:384][876]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.34.05:806][981]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_17)
-[2016.01.29-05.34.10:809][568]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.34.11:699][654]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.34.12:760][733]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_17)
-[2016.01.29-05.34.16:227][121]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.34.17:337][216]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.34.17:961][265]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.34.18:273][298]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_17)
-[2016.01.29-05.34.22:780][828]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.34.23:516][911]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.34.23:829][946]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_17)
-[2016.01.29-05.34.43:073][228]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.34.46:199][521]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_17)
-[2016.01.29-05.34.49:482][836]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.34.52:322][ 31]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_7)
-[2016.01.29-05.35.11:363][ 32]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.35.15:445][435]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.35.20:549][966]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_16)
-[2016.01.29-05.35.21:163][ 26]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall_5)
-[2016.01.29-05.35.21:577][ 70]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall_3)
-[2016.01.29-05.35.22:004][116]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall_8)
-[2016.01.29-05.35.22:793][205]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall_11)
-[2016.01.29-05.35.23:241][254]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall_13)
-[2016.01.29-05.35.23:798][316]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall_14)
-[2016.01.29-05.35.24:492][393]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall_12)
-[2016.01.29-05.35.25:163][467]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall_6)
-[2016.01.29-05.35.33:586][266]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.35.33:945][300]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.35.34:779][394]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.36.02:504][452]LogSavePackage: Save=1184.742188ms
-[2016.01.29-05.36.02:504][452]LogSavePackage: Moving '../../../../../../Herose-defend/Hero 4.10/Saved/Minimal_Default_Auto175C13B4149F950A264B78D9C11AB42E2.tmp' to '../../../../../../Herose-defend/Hero 4.10/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap'
-[2016.01.29-05.36.02:506][452]LogSavePackage: Total save time: 1287.367295ms
-[2016.01.29-05.36.02:506][452]LogSavePackage:Display: Finished SavePackage ../../../../../../Herose-defend/Hero 4.10/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap
-[2016.01.29-05.36.02:507][452]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 1.307
-[2016.01.29-05.36.02:507][452]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.307
-[2016.01.29-05.45.09:265][ 29]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-05.45.09:963][101]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.45.15:814][612]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-05.45.16:600][699]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.45.17:850][792]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.45.23:193][428]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.45.26:075][677]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.45.26:920][746]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.45.27:698][829]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.45.28:199][869]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.45.29:020][958]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.45.29:470][994]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.45.30:170][ 69]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.45.30:789][120]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.45.31:412][184]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.45.32:508][275]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.45.33:337][364]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.45.33:950][414]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.45.39:077][778]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_22)
-[2016.01.29-05.45.48:486][847]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.45.51:755][148]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-05.45.52:486][228]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.45.55:609][500]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Wall_22)
-[2016.01.29-05.45.56:552][598]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_19)
-[2016.01.29-05.46.12:123][300]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_21)
-[2016.01.29-05.46.18:687][919]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-05.46.19:389][995]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.46.20:942][164]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.46.21:556][235]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.46.22:881][333]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.46.23:465][396]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.46.24:337][464]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.46.30:699][ 22]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_24)
-[2016.01.29-05.46.37:962][706]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.46.38:407][752]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.46.38:444][753]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.46.43:660][238]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_24)
-[2016.01.29-05.46.48:496][790]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_11)
-[2016.01.29-05.46.49:008][845]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_13)
-[2016.01.29-05.46.49:822][937]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_24)
-[2016.01.29-05.46.57:761][876]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.47.23:944][831]LogSavePackage: Save=1205.209473ms
-[2016.01.29-05.47.23:944][831]LogSavePackage: Moving '../../../../../../Herose-defend/Hero 4.10/Saved/Minimal_Default_Auto265687C95418F59694C65C09136E0CC87.tmp' to '../../../../../../Herose-defend/Hero 4.10/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto2.umap'
-[2016.01.29-05.47.23:946][831]LogSavePackage: Total save time: 1245.018981ms
-[2016.01.29-05.47.23:946][831]LogSavePackage:Display: Finished SavePackage ../../../../../../Herose-defend/Hero 4.10/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto2.umap
-[2016.01.29-05.47.23:948][831]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 1.263
-[2016.01.29-05.47.23:948][831]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.263
-[2016.01.29-05.49.54:747][922]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_13)
-[2016.01.29-05.50.12:230][873]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.50.13:668][ 37]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.50.16:749][289]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.50.17:210][341]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.50.17:519][375]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.50.18:202][454]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-05.50.32:271][824]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_14)
-[2016.01.29-05.50.43:752][105]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_8)
-[2016.01.29-05.50.47:736][458]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_14)
-[2016.01.29-05.50.57:584][590]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.52.45:160][324]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.52.45:565][368]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_11)
-[2016.01.29-05.52.53:169][198]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.52.53:584][231]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.52.54:319][307]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.52.54:915][355]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.52.55:647][433]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.52.55:875][451]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.52.56:687][538]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.52.56:997][562]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.52.57:789][647]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.52.58:168][677]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.52.58:716][734]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.52.59:049][761]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.52.59:929][856]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.53.00:451][895]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.53.01:427][998]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.53.02:868][163]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.53.04:679][370]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.53.05:093][403]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.53.06:027][504]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.53.06:538][544]LogActorFactory: Actor Factory created Wall_2
-[2016.01.29-05.53.07:358][633]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.53.07:919][677]LogActorFactory: Actor Factory created Wall_1
-[2016.01.29-05.53.12:492][135]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_35)
-[2016.01.29-05.53.36:527][515]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-05.53.37:696][644]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.53.38:999][753]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_35)
-[2016.01.29-05.53.47:554][715]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.53.52:058][103]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_27)
-[2016.01.29-05.54.05:862][605]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.54.13:378][251]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_26)
-[2016.01.29-05.54.31:980][361]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.54.34:412][578]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-05.54.34:852][627]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-05.54.35:723][727]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.54.37:798][886]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_29)
-[2016.01.29-05.54.46:955][891]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.54.53:172][406]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Wall_19)
-[2016.01.29-05.54.53:737][460]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_20)
-[2016.01.29-05.55.09:514][143]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.57.08:656][ 25]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_21)
-[2016.01.29-05.57.24:635][723]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.58.01:171][728]LogSavePackage: Save=1181.265137ms
-[2016.01.29-05.58.01:171][728]LogSavePackage: Moving '../../../../../../Herose-defend/Hero 4.10/Saved/Minimal_Default_Auto3FA688A2D404535F382B5DBBD7B58DCA6.tmp' to '../../../../../../Herose-defend/Hero 4.10/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto3.umap'
-[2016.01.29-05.58.01:173][728]LogSavePackage: Total save time: 1208.950203ms
-[2016.01.29-05.58.01:173][728]LogSavePackage:Display: Finished SavePackage ../../../../../../Herose-defend/Hero 4.10/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto3.umap
-[2016.01.29-05.58.01:174][728]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 1.228
-[2016.01.29-05.58.01:174][728]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.228
-[2016.01.29-05.58.45:006][986]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.58.45:469][ 36]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_23)
-[2016.01.29-05.59.13:184][110]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.59.14:250][231]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_23)
-[2016.01.29-05.59.16:880][532]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.59.29:052][801]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_33)
-[2016.01.29-05.59.42:547][187]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.59.45:353][447]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Wall_34)
-[2016.01.29-05.59.46:068][518]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-05.59.47:339][586]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_32)
-[2016.01.29-05.59.51:441][900]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_31)
-[2016.01.29-05.59.58:219][494]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_32)
-[2016.01.29-05.59.58:740][527]Cmd: DELETE
-[2016.01.29-05.59.58:740][527]Cmd: ACTOR DELETE
-[2016.01.29-05.59.58:747][527]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-05.59.58:759][527]LogEditorActor: Deleted 1 Actors (0.019 secs)
-[2016.01.29-05.59.59:370][599]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_31)
-[2016.01.29-05.59.59:722][635]Cmd: DELETE
-[2016.01.29-05.59.59:722][635]Cmd: ACTOR DELETE
-[2016.01.29-05.59.59:729][635]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-05.59.59:739][635]LogEditorActor: Deleted 1 Actors (0.017 secs)
-[2016.01.29-06.00.00:033][669]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_34)
-[2016.01.29-06.00.00:196][682]Cmd: DELETE
-[2016.01.29-06.00.00:196][682]Cmd: ACTOR DELETE
-[2016.01.29-06.00.00:202][682]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-06.00.00:213][682]LogEditorActor: Deleted 1 Actors (0.017 secs)
-[2016.01.29-06.00.00:588][725]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_30)
-[2016.01.29-06.00.00:752][738]Cmd: DELETE
-[2016.01.29-06.00.00:752][738]Cmd: ACTOR DELETE
-[2016.01.29-06.00.00:757][738]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-06.00.00:768][738]LogEditorActor: Deleted 1 Actors (0.016 secs)
-[2016.01.29-06.00.01:194][788]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_28)
-[2016.01.29-06.00.01:349][801]Cmd: DELETE
-[2016.01.29-06.00.01:349][801]Cmd: ACTOR DELETE
-[2016.01.29-06.00.01:354][801]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-06.00.01:366][801]LogEditorActor: Deleted 1 Actors (0.016 secs)
-[2016.01.29-06.00.01:940][869]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_8)
-[2016.01.29-06.00.02:419][919]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_25)
-[2016.01.29-06.00.15:798][256]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.00.17:934][419]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_25)
-[2016.01.29-06.00.18:862][487]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.00.21:228][641]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.00.21:726][674]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_5)
-[2016.01.29-06.00.33:558][923]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.00.35:522][ 79]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_8)
-[2016.01.29-06.00.38:395][410]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_16)
-[2016.01.29-06.00.39:112][488]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.00.39:551][534]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_11)
-[2016.01.29-06.00.57:729][453]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_5)
-[2016.01.29-06.00.58:308][516]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.01.01:486][723]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_11)
-[2016.01.29-06.01.04:679][ 21]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.01.06:960][284]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_3)
-[2016.01.29-06.01.17:143][308]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.01.26:588][324]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_12)
-[2016.01.29-06.01.27:613][440]Cmd: DELETE
-[2016.01.29-06.01.27:613][440]Cmd: ACTOR DELETE
-[2016.01.29-06.01.27:620][440]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-06.01.27:635][440]LogEditorActor: Deleted 1 Actors (0.022 secs)
-[2016.01.29-06.01.28:699][564]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_6)
-[2016.01.29-06.01.29:461][650]Cmd: DELETE
-[2016.01.29-06.01.29:461][650]Cmd: ACTOR DELETE
-[2016.01.29-06.01.29:467][650]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-06.01.29:478][650]LogEditorActor: Deleted 1 Actors (0.016 secs)
-[2016.01.29-06.01.30:613][782]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_16)
-[2016.01.29-06.01.31:460][878]Cmd: DELETE
-[2016.01.29-06.01.31:460][878]Cmd: ACTOR DELETE
-[2016.01.29-06.01.31:465][878]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-06.01.31:476][878]LogEditorActor: Deleted 1 Actors (0.016 secs)
-[2016.01.29-06.01.32:695][ 20]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_8)
-[2016.01.29-06.01.33:456][104]Cmd: DELETE
-[2016.01.29-06.01.33:456][104]Cmd: ACTOR DELETE
-[2016.01.29-06.01.33:461][104]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-06.01.33:472][104]LogEditorActor: Deleted 1 Actors (0.016 secs)
-[2016.01.29-06.01.34:708][249]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_36)
-[2016.01.29-06.01.35:623][353]Cmd: DELETE
-[2016.01.29-06.01.35:623][353]Cmd: ACTOR DELETE
-[2016.01.29-06.01.35:628][353]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-06.01.35:638][353]LogEditorActor: Deleted 1 Actors (0.015 secs)
-[2016.01.29-06.01.36:832][493]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-06.01.37:704][587]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-06.01.40:421][875]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-06.01.56:469][334]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.03.07:689][198]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_23)
-[2016.01.29-06.03.08:128][242]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_21)
-[2016.01.29-06.03.08:788][313]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_20)
-[2016.01.29-06.03.09:614][403]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_19)
-[2016.01.29-06.03.10:903][545]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_22)
-[2016.01.29-06.03.11:667][629]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_7)
-[2016.01.29-06.03.12:118][675]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.03.12:621][728]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Arch_part3)
-[2016.01.29-06.03.13:310][803]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.04.13:617][613]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.14:340][670]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.15:433][787]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.04.15:975][830]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.04.17:941][ 49]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.18:521][ 94]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.19:466][195]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.04.20:112][246]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.04.21:107][353]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.04.21:562][387]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.04.22:416][475]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.04.22:873][509]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.04.23:935][623]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.04.24:377][656]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.04.25:264][751]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.26:204][824]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.27:006][905]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.04.27:843][971]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.04.28:631][ 53]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.04.29:409][114]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.04.30:364][217]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.04.30:957][262]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.04.32:074][382]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.32:748][433]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.33:506][511]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.04.34:204][565]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.04.35:779][747]Cmd: DELETE
-[2016.01.29-06.04.35:779][747]Cmd: ACTOR DELETE
-[2016.01.29-06.04.35:784][747]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-06.04.35:796][747]LogEditorActor: Deleted 1 Actors (0.017 secs)
-[2016.01.29-06.04.37:238][917]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.04.38:071][993]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.04.39:231][119]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.40:168][192]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.43:344][489]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.04.43:868][528]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.04.44:664][611]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.04.44:975][633]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.04.45:889][730]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.04.46:385][766]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.04.47:250][856]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.47:583][880]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.48:797][ 16]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.04.49:368][ 59]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.04.50:870][223]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.51:676][284]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.52:555][374]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.04.53:183][422]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.04.53:945][501]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.04.54:676][557]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.04.55:386][630]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.55:922][671]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.57:030][790]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.04.57:720][841]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.04.58:466][919]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.04.59:215][976]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.05.00:178][ 78]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.05.00:790][123]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.05.01:628][211]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.05.02:160][251]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.05.03:929][440]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.05.04:641][493]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.05.05:838][625]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.05.06:403][666]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.05.07:292][760]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.05.07:699][789]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.05.08:495][869]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.05.09:433][973]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.05.11:764][239]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.05.12:140][267]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.05.16:210][633]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.05.17:267][714]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.05.18:050][795]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.05.18:847][856]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.05.19:780][956]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.05.20:497][ 10]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.05.21:571][124]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.05.22:407][187]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.05.23:375][288]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.05.24:279][357]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.05.25:353][474]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.05.26:343][551]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.05.27:361][659]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.05.28:354][735]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.05.30:271][946]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.05.31:093][  9]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.05.32:234][133]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.05.32:938][185]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.05.33:831][276]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.05.34:462][323]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.05.35:671][456]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.05.37:219][578]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.05.53:109][ 23]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.05.53:673][ 64]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.05.54:541][154]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.05.55:215][204]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.05.56:052][292]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.05.56:895][357]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.05.57:630][434]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.05.58:200][477]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.05.59:546][621]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.06.00:289][677]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.06.35:857][928]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.06.36:635][986]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.06.37:467][ 73]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.06.38:334][139]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.06.39:028][209]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.06.39:881][271]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.06.41:376][431]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.06.42:661][531]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.06.43:648][635]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.06.44:418][692]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.06.45:594][813]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.06.46:674][897]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.06.47:561][988]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.06.48:489][ 59]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.06.49:477][162]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.06.50:103][208]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.06.50:874][287]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.06.51:713][348]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.06.52:541][434]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.06.53:257][486]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.06.54:390][610]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.06.55:192][666]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.06.56:706][829]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.06.57:451][884]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.07.01:366][220]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.07.02:434][299]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.07.05:282][496]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.05:954][547]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.06:690][616]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.07:193][653]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.07:966][733]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.07.08:464][770]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.07.09:391][850]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.07.10:010][896]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.07.11:651][ 15]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.12:275][ 61]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.13:788][173]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.07.14:410][216]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.07.15:332][278]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.15:723][308]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.16:705][383]LogActorFactory: Actor Factory created Tile_5
-[2016.01.29-06.07.18:091][521]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.18:473][549]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.21:191][728]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.07.21:685][762]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.07.22:840][838]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.23:520][887]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.24:152][948]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.24:673][985]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.25:388][ 58]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.25:933][ 97]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.26:583][162]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.07.27:212][207]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.07.28:011][290]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.28:661][336]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.29:390][412]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.30:163][468]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.31:166][574]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.31:864][624]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.33:016][709]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.33:604][753]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.34:807][836]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.35:255][869]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.36:296][945]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.07.36:682][974]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.07.37:407][ 30]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.38:509][110]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.39:440][176]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.39:874][206]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.40:800][269]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.07.41:372][307]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.07.42:766][402]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.44:333][512]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.51:124][987]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.51:696][ 23]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.52:605][118]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.07.53:217][158]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.07.54:117][254]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.07.54:940][306]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.07.55:733][390]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.07.56:346][429]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.07.57:202][515]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.57:960][563]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.07.58:852][657]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.07.59:797][717]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.08.00:664][793]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.08.01:534][849]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.08.02:460][943]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.08.03:118][985]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.08.03:827][ 57]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.08.04:444][ 96]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.08.05:585][219]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.08.06:172][255]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.08.07:386][381]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.08.08:309][439]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.08.09:235][534]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.08.09:822][571]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.08.10:487][637]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.08.11:111][675]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.08.12:285][799]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.08.12:968][842]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.08.13:901][939]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.08.14:323][965]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.08.15:386][ 81]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.08.16:059][122]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.08.17:484][285]Cmd: EDIT COPY
-[2016.01.29-06.08.17:928][337]Cmd: EDIT PASTE
-[2016.01.29-06.08.18:826][439]Cmd: EDIT PASTE
-[2016.01.29-06.08.19:272][487]Cmd: EDIT PASTE
-[2016.01.29-06.08.19:487][508]Cmd: EDIT PASTE
-[2016.01.29-06.08.19:693][528]Cmd: EDIT PASTE
-[2016.01.29-06.08.19:907][549]Cmd: EDIT PASTE
-[2016.01.29-06.08.21:242][700]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.08.22:589][850]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.08.22:897][880]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_425)
-[2016.01.29-06.08.25:005][107]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_424)
-[2016.01.29-06.08.26:208][231]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_423)
-[2016.01.29-06.08.28:168][442]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_422)
-[2016.01.29-06.08.29:660][599]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_421)
-[2016.01.29-06.08.30:897][727]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_420)
-[2016.01.29-06.08.32:355][881]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_419)
-[2016.01.29-06.08.33:995][ 44]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_415)
-[2016.01.29-06.08.34:385][ 84]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.08.36:765][353]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_411)
-[2016.01.29-06.08.37:784][464]Cmd: EDIT COPY
-[2016.01.29-06.08.38:424][539]Cmd: EDIT PASTE
-[2016.01.29-06.08.39:778][695]Cmd: EDIT PASTE
-[2016.01.29-06.08.40:004][717]Cmd: EDIT PASTE
-[2016.01.29-06.08.40:180][733]Cmd: EDIT PASTE
-[2016.01.29-06.08.40:363][749]Cmd: EDIT PASTE
-[2016.01.29-06.08.40:542][764]Cmd: EDIT PASTE
-[2016.01.29-06.08.40:725][780]Cmd: EDIT PASTE
-[2016.01.29-06.08.42:449][959]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_431)
-[2016.01.29-06.08.43:763][ 94]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_430)
-[2016.01.29-06.08.45:344][258]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_429)
-[2016.01.29-06.08.46:820][412]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_428)
-[2016.01.29-06.08.48:259][558]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_427)
-[2016.01.29-06.08.50:022][738]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_426)
-[2016.01.29-06.09.19:874][ 94]LogSavePackage: Save=1236.538696ms
-[2016.01.29-06.09.19:874][ 94]LogSavePackage: Moving '../../../../../../Herose-defend/Hero 4.10/Saved/Minimal_Default_Auto41E4C3B024E111A393E16B2B92372FB24.tmp' to '../../../../../../Herose-defend/Hero 4.10/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto4.umap'
-[2016.01.29-06.09.19:876][ 94]LogSavePackage: Total save time: 1267.158173ms
-[2016.01.29-06.09.19:876][ 94]LogSavePackage:Display: Finished SavePackage ../../../../../../Herose-defend/Hero 4.10/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto4.umap
-[2016.01.29-06.09.19:877][ 94]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 1.289
-[2016.01.29-06.09.19:877][ 94]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.289
-[2016.01.29-06.17.46:244][767]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_347)
-[2016.01.29-06.17.52:719][300]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_409)
-[2016.01.29-06.17.55:765][616]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-06.18.01:262][ 68]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-06.18.01:706][104]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-06.18.02:396][181]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.18.04:927][365]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-06.18.06:079][495]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.18.08:420][669]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_381)
-[2016.01.29-06.18.09:640][807]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_371)
-[2016.01.29-06.18.13:008][156]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_370)
-[2016.01.29-06.18.15:793][483]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.18.16:466][557]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_370)
-[2016.01.29-06.18.21:266][107]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_381)
-[2016.01.29-06.18.23:190][318]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_391)
-[2016.01.29-06.18.24:812][494]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_393)
-[2016.01.29-06.18.33:804][389]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_371)
-[2016.01.29-06.18.40:700][139]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_341)
-[2016.01.29-06.18.45:434][668]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_382)
-[2016.01.29-06.18.52:583][395]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_341)
-[2016.01.29-06.18.55:802][727]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_394)
-[2016.01.29-06.19.02:876][483]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_392)
-[2016.01.29-06.19.13:326][503]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.19.13:658][535]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_372)
-[2016.01.29-06.19.22:518][426]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_327)
-[2016.01.29-06.19.34:056][686]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_373)
-[2016.01.29-06.19.41:222][368]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_417)
-[2016.01.29-06.19.47:243][ 28]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.19.47:808][ 88]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_390)
-[2016.01.29-06.19.53:319][671]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_417)
-[2016.01.29-06.19.55:783][923]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.19.56:175][962]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_395)
-[2016.01.29-06.19.56:883][ 37]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_383)
-[2016.01.29-06.20.06:214][997]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_329)
-[2016.01.29-06.20.07:498][144]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_383)
-[2016.01.29-06.20.11:346][583]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.20.12:176][676]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_320)
-[2016.01.29-06.20.20:653][590]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_340)
-[2016.01.29-06.20.31:397][698]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.20.31:851][746]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_339)
-[2016.01.29-06.20.41:544][796]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_319)
-[2016.01.29-06.20.47:858][472]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_368)
-[2016.01.29-06.20.48:334][522]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_319)
-[2016.01.29-06.20.50:889][780]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_322)
-[2016.01.29-06.20.51:414][835]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.20.52:074][907]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_369)
-[2016.01.29-06.20.57:856][555]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_396)
-[2016.01.29-06.21.03:113][ 61]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_409)
-[2016.01.29-06.21.13:724][219]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.21.40:537][246]LogSavePackage: Save=1250.434326ms
-[2016.01.29-06.21.40:537][246]LogSavePackage: Moving '../../../../../../Herose-defend/Hero 4.10/Saved/Minimal_Default_Auto544BA9F4A47752931AD1B8295996CCBC1.tmp' to '../../../../../../Herose-defend/Hero 4.10/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto5.umap'
-[2016.01.29-06.21.40:539][246]LogSavePackage: Total save time: 1276.638791ms
-[2016.01.29-06.21.40:539][246]LogSavePackage:Display: Finished SavePackage ../../../../../../Herose-defend/Hero 4.10/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto5.umap
-[2016.01.29-06.21.40:541][246]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 1.303
-[2016.01.29-06.21.40:541][246]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.303
-[2016.01.29-06.21.56:830][199]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_329)
-[2016.01.29-06.22.05:162][ 62]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_343)
-[2016.01.29-06.22.14:977][ 73]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_384)
-[2016.01.29-06.22.19:864][588]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_389)
-[2016.01.29-06.22.25:585][193]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_395)
-[2016.01.29-06.22.38:895][643]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_374)
-[2016.01.29-06.22.55:365][245]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_397)
-[2016.01.29-06.22.56:359][355]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_368)
-[2016.01.29-06.23.01:341][844]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_352)
-[2016.01.29-06.23.12:602][973]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.23.13:076][ 23]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_352)
-[2016.01.29-06.26.51:123][147]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_367)
-[2016.01.29-06.26.59:826][ 78]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_397)
-[2016.01.29-06.27.01:163][228]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_366)
-[2016.01.29-06.27.10:602][199]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.27.11:008][241]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_397)
-[2016.01.29-06.27.18:920][ 91]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_414)
-[2016.01.29-06.27.22:476][459]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_418)
-[2016.01.29-06.27.29:959][250]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_415)
-[2016.01.29-06.27.37:485][ 28]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_370)
-[2016.01.29-06.27.48:267][160]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_381)
-[2016.01.29-06.27.56:339][967]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.27.56:892][ 26]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_419)
-[2016.01.29-06.27.57:415][ 81]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_381)
-[2016.01.29-06.28.03:886][797]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_410)
-[2016.01.29-06.28.12:319][652]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.28.12:702][690]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_375)
-[2016.01.29-06.28.22:176][710]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_342)
-[2016.01.29-06.28.26:802][217]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_385)
-[2016.01.29-06.28.39:927][607]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.28.41:053][735]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_386)
-[2016.01.29-06.28.41:708][805]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_385)
-[2016.01.29-06.28.44:802][152]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_386)
-[2016.01.29-06.28.45:227][196]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_323)
-[2016.01.29-06.28.46:805][372]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_386)
-[2016.01.29-06.28.53:207][ 40]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.28.55:230][276]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.28.55:684][327]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_385)
-[2016.01.29-06.28.58:428][639]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.28.58:924][692]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_323)
-[2016.01.29-06.29.08:525][651]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_326)
-[2016.01.29-06.29.19:012][764]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.29.19:332][797]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_338)
-[2016.01.29-06.29.28:811][742]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_321)
-[2016.01.29-06.29.39:346][819]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_322)
-[2016.01.29-06.29.54:806][455]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_353)
-[2016.01.29-06.30.01:522][112]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.30.01:859][144]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_328)
-[2016.01.29-06.30.09:570][949]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_363)
-[2016.01.29-06.30.17:765][800]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_376)
-[2016.01.29-06.30.23:092][389]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_398)
-[2016.01.29-06.31.24:232][507]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_325)
-[2016.01.29-06.31.35:274][601]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.32.01:756][590]LogSavePackage: Save=1222.107422ms
-[2016.01.29-06.32.01:757][590]LogSavePackage: Moving '../../../../../../Herose-defend/Hero 4.10/Saved/Minimal_Default_Auto65864EE8C45A42B265F7D7B99DBC84759.tmp' to '../../../../../../Herose-defend/Hero 4.10/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto6.umap'
-[2016.01.29-06.32.01:758][590]LogSavePackage: Total save time: 1247.801561ms
-[2016.01.29-06.32.01:758][590]LogSavePackage:Display: Finished SavePackage ../../../../../../Herose-defend/Hero 4.10/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto6.umap
-[2016.01.29-06.32.01:760][590]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 1.286
-[2016.01.29-06.32.01:760][590]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.286
-[2016.01.29-06.32.06:585][167]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.32.06:938][204]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_324)
-[2016.01.29-06.32.17:020][230]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.32.17:439][275]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_331)
-[2016.01.29-06.32.21:897][764]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.32.22:128][786]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_336)
-[2016.01.29-06.32.29:132][470]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_335)
-[2016.01.29-06.32.41:735][827]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_354)
-[2016.01.29-06.32.51:558][837]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.40.49:348][  6]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_419)
-[2016.01.29-06.40.57:147][811]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-06.40.57:806][879]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.40.59:466][ 62]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.40.59:965][117]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_419)
-[2016.01.29-06.41.06:921][877]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.41.07:396][926]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_411)
-[2016.01.29-06.41.20:551][326]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.41.20:811][349]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_404)
-[2016.01.29-06.41.32:977][535]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.41.34:075][658]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_405)
-[2016.01.29-06.41.41:753][473]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_413)
-[2016.01.29-06.41.49:483][256]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_365)
-[2016.01.29-06.41.56:016][941]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_406)
-[2016.01.29-06.42.05:495][950]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_377)
-[2016.01.29-06.42.13:357][723]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_410)
-[2016.01.29-06.42.15:501][970]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_399)
-[2016.01.29-06.42.28:980][316]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.42.30:171][452]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_378)
-[2016.01.29-06.42.39:504][456]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_364)
-[2016.01.29-06.42.44:590][  4]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.42.45:124][ 61]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_379)
-[2016.01.29-06.42.50:408][615]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.42.51:582][747]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_401)
-[2016.01.29-06.42.53:705][989]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_412)
-[2016.01.29-06.42.56:131][270]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_347)
-[2016.01.29-06.43.04:397][107]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_344)
-[2016.01.29-06.43.10:845][763]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_337)
-[2016.01.29-06.43.17:495][424]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_345)
-[2016.01.29-06.43.23:607][ 40]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.43.24:050][ 85]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.43.24:353][118]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_345)
-[2016.01.29-06.43.25:629][255]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.43.26:084][303]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.43.26:543][355]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_333)
-[2016.01.29-06.43.36:845][356]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_348)
-[2016.01.29-06.43.40:592][766]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_351)
-[2016.01.29-06.43.56:226][328]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.43.58:274][494]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_355)
-[2016.01.29-06.44.05:221][120]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.44.05:841][185]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.44.06:431][251]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.44.06:997][314]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_356)
-[2016.01.29-06.44.19:906][645]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.44.20:231][677]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_332)
-[2016.01.29-06.44.28:201][521]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.44.28:479][548]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_401)
-[2016.01.29-06.44.34:974][200]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.44.35:573][263]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_400)
-[2016.01.29-06.44.39:607][689]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_408)
-[2016.01.29-06.44.45:879][318]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_407)
-[2016.01.29-06.44.52:961][ 27]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_429)
-[2016.01.29-06.44.58:458][596]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_430)
-[2016.01.29-06.44.59:257][684]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.44.59:616][720]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_407)
-[2016.01.29-06.45.01:505][918]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_429)
-[2016.01.29-06.45.06:894][494]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.45.08:429][670]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_432)
-[2016.01.29-06.45.15:947][453]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_430)
-[2016.01.29-06.45.18:782][776]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_402)
-[2016.01.29-06.45.32:636][145]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.45.59:786][210]LogSavePackage: Save=1230.564331ms
-[2016.01.29-06.45.59:786][210]LogSavePackage: Moving '../../../../../../Herose-defend/Hero 4.10/Saved/Minimal_Default_Auto78A8DAC204D316C2D4C6BCE96F4357BE2.tmp' to '../../../../../../Herose-defend/Hero 4.10/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto7.umap'
-[2016.01.29-06.45.59:788][210]LogSavePackage: Total save time: 1257.535327ms
-[2016.01.29-06.45.59:788][210]LogSavePackage:Display: Finished SavePackage ../../../../../../Herose-defend/Hero 4.10/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto7.umap
-[2016.01.29-06.45.59:790][210]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 1.309
-[2016.01.29-06.45.59:790][210]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.309
-[2016.01.29-06.46.04:213][739]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_360)
-[2016.01.29-06.46.08:772][180]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.51.34:060][ 81]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.51.34:534][133]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_420)
-[2016.01.29-06.51.42:836][ 13]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.51.43:259][ 57]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_421)
-[2016.01.29-06.51.52:300][ 39]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_422)
-[2016.01.29-06.51.57:076][565]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_423)
-[2016.01.29-06.52.08:335][700]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_391)
-[2016.01.29-06.52.16:469][519]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_425)
-[2016.01.29-06.52.27:093][642]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.52.27:902][732]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_416)
-[2016.01.29-06.52.38:254][781]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.52.38:872][848]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_424)
-[2016.01.29-06.52.47:993][771]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_412)
-[2016.01.29-06.52.57:630][742]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_431)
-[2016.01.29-06.53.05:641][561]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_430)
-[2016.01.29-06.53.12:342][306]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_342)
-[2016.01.29-06.53.13:022][377]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_430)
-[2016.01.29-06.53.17:590][784]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_387)
-[2016.01.29-06.53.22:523][319]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.53.22:777][342]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_346)
-[2016.01.29-06.53.27:426][825]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.53.27:716][851]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_388)
-[2016.01.29-06.53.33:158][417]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.53.33:492][448]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_330)
-[2016.01.29-06.53.40:368][130]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.53.40:867][182]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_350)
-[2016.01.29-06.53.47:113][789]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.53.47:405][815]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_349)
-[2016.01.29-06.53.53:038][382]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_334)
-[2016.01.29-06.54.02:425][348]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_358)
-[2016.01.29-06.54.13:923][541]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.54.14:995][662]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_359)
-[2016.01.29-06.54.20:578][287]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.54.21:146][348]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_359)
-[2016.01.29-06.54.24:719][716]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_361)
-[2016.01.29-06.54.25:301][778]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_357)
-[2016.01.29-06.54.35:826][983]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.54.36:086][  7]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_361)
-[2016.01.29-06.54.41:817][630]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.54.42:585][713]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_361)
-[2016.01.29-06.54.48:331][273]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.54.48:826][325]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_362)
-[2016.01.29-06.54.51:838][648]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_336)
-[2016.01.29-06.54.52:495][716]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_362)
-[2016.01.29-06.54.55:607][996]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.54.56:664][114]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.54.57:032][153]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_380)
-[2016.01.29-06.55.04:017][876]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_403)
-[2016.01.29-06.55.05:391][ 30]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_380)
-[2016.01.29-06.55.08:201][349]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.55.08:744][407]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_403)
-[2016.01.29-06.55.19:968][427]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.55.20:608][497]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.55.20:925][531]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_427)
-[2016.01.29-06.55.28:920][328]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.55.29:755][421]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_428)
-[2016.01.29-06.55.36:781][ 95]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.55.37:548][180]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_426)
-[2016.01.29-06.55.47:763][129]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.55.49:486][320]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.55.50:344][376]LogActorFactory: Actor Factory created Tile_4
-[2016.01.29-06.55.51:152][459]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.55.51:750][495]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.55.52:677][592]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.55.53:351][637]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.55.54:083][714]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.55.54:752][756]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.55.55:478][833]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.55.56:109][874]LogActorFactory: Actor Factory created Tile_1
-[2016.01.29-06.55.57:019][969]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.55.58:026][ 35]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.55.58:735][109]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_433)
-[2016.01.29-06.56.02:511][507]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_434)
-[2016.01.29-06.56.15:410][886]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_433)
-[2016.01.29-06.56.16:670][ 30]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.56.17:387][107]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_434)
-[2016.01.29-06.56.18:864][267]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.56.19:316][314]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_433)
-[2016.01.29-06.56.23:364][694]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_356)
-[2016.01.29-06.56.24:090][769]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.56.24:423][799]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.56.24:819][841]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_433)
-[2016.01.29-06.56.28:796][258]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.56.29:921][386]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_435)
-[2016.01.29-06.56.35:923][995]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_436)
-[2016.01.29-06.56.38:742][304]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_438)
-[2016.01.29-06.56.42:906][716]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.56.43:333][758]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_437)
-[2016.01.29-06.56.50:220][473]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.56.53:513][847]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.56.54:570][915]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.56.56:842][175]Cmd: DELETE
-[2016.01.29-06.56.56:842][175]Cmd: ACTOR DELETE
-[2016.01.29-06.56.56:848][175]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-06.56.56:861][175]LogEditorActor: Deleted 1 Actors (0.018 secs)
-[2016.01.29-06.56.57:920][299]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.56.59:241][399]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.57.03:824][852]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.57.05:418][ 30]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.57.06:735][117]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.57.12:204][598]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.57.12:670][645]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_439)
-[2016.01.29-06.57.16:105][ 32]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_440)
-[2016.01.29-06.57.18:079][237]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.57.22:368][739]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.57.23:834][832]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.57.24:233][869]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_441)
-[2016.01.29-06.57.29:550][413]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.57.31:484][631]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.57.33:572][770]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.57.34:146][827]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.57.35:598][994]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_442)
-[2016.01.29-06.57.41:890][626]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.57.47:167][243]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.57.51:094][506]LogActorFactory: Actor Factory created Tile_2
-[2016.01.29-06.57.52:091][611]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.57.53:293][689]LogActorFactory: Actor Factory created Tile_3
-[2016.01.29-06.57.54:563][826]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.57.54:916][861]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_443)
-[2016.01.29-06.57.56:331][  8]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_444)
-[2016.01.29-06.58.02:327][640]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.58.02:799][689]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_443)
-[2016.01.29-06.58.10:216][443]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.58.10:709][495]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_443)
-[2016.01.29-06.58.15:604][ 21]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.58.18:107][314]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.58.18:526][360]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_435)
-[2016.01.29-06.58.20:648][595]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.58.21:801][726]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.59.06:497][993]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-06.59.07:292][ 76]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.59.08:111][125]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Tile_441)
-[2016.01.29-06.59.08:578][167]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.59.40:808][810]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.59.41:428][877]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.59.47:445][496]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-06.59.48:355][602]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-06.59.48:813][654]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-07.00.21:281][151]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-07.00.21:918][221]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-07.00.22:389][274]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-07.00.22:867][327]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Arch_part3)
-[2016.01.29-07.00.23:468][392]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-07.00.24:120][464]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Arch_part3)
-[2016.01.29-07.00.25:024][566]Cmd: DELETE
-[2016.01.29-07.00.25:024][566]Cmd: ACTOR DELETE
-[2016.01.29-07.00.25:030][566]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-07.00.25:043][566]LogEditorActor: Deleted 1 Actors (0.019 secs)
-[2016.01.29-07.00.26:940][791]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Tile_335)
-[2016.01.29-07.00.27:537][851]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-07.00.40:138][227]LogActorFactory: Actor Factory created Arch
-[2016.01.29-07.00.41:419][322]LogActorFactory: Actor Factory created Arch
-[2016.01.29-07.00.42:575][453]Cmd: DELETE
-[2016.01.29-07.00.42:575][453]Cmd: ACTOR DELETE
-[2016.01.29-07.00.42:581][453]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-07.00.42:594][453]LogEditorActor: Deleted 1 Actors (0.018 secs)
-[2016.01.29-07.00.48:280][113]LogActorFactory: Actor Factory created Crystal_5
-[2016.01.29-07.00.53:663][662]LogActorFactory: Actor Factory created Altar
-[2016.01.29-07.00.56:153][876]LogActorFactory: Actor Factory created Altar
-[2016.01.29-07.01.32:023][  8]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-07.01.32:805][ 94]LogEditorViewport: Clicking on Actor (LMB): Emitter (Fire2)
-[2016.01.29-07.01.35:757][434]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-07.01.40:099][780]LogSavePackage: Save=1266.531616ms
-[2016.01.29-07.01.40:099][780]LogSavePackage: Moving '../../../../../../Herose-defend/Hero 4.10/Saved/Minimal_Default4B05D90C4939462B5CABF3B54F71F78B.tmp' to '../../../../../../Herose-defend/Hero 4.10/Content/StarterContent/Maps/Minimal_Default.umap'
-[2016.01.29-07.01.40:106][780]LogSavePackage: Total save time: 1298.941869ms
-[2016.01.29-07.01.40:106][780]LogSavePackage:Display: Finished SavePackage ../../../../../../Herose-defend/Hero 4.10/Content/StarterContent/Maps/Minimal_Default.umap
-[2016.01.29-07.02.08:811][222]LogActorFactory: Actor Factory created Crystal_5
-[2016.01.29-07.02.09:834][283]LogActorFactory: Actor Factory created Crystal_5
-[2016.01.29-07.02.10:978][401]LogActorFactory: Actor Factory created Crystal_5
-[2016.01.29-07.02.30:392][546]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-07.02.31:053][615]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-07.02.32:106][679]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Crystal_5)
-[2016.01.29-07.02.34:804][932]Cmd: EDIT COPY
-[2016.01.29-07.02.35:593][ 23]Cmd: EDIT PASTE
-[2016.01.29-07.02.40:181][523]Cmd: EDIT PASTE
-[2016.01.29-07.02.42:609][773]Cmd: EDIT PASTE
-[2016.01.29-07.02.44:834][993]Cmd: EDIT PASTE
-[2016.01.29-07.02.47:097][220]Cmd: EDIT PASTE
-[2016.01.29-07.02.50:305][540]Cmd: EDIT PASTE
-[2016.01.29-07.02.53:173][829]Cmd: EDIT PASTE
-[2016.01.29-07.02.57:534][151]Cmd: DELETE
-[2016.01.29-07.02.57:534][151]Cmd: ACTOR DELETE
-[2016.01.29-07.02.57:539][151]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-07.02.57:551][151]LogEditorActor: Deleted 1 Actors (0.017 secs)
-[2016.01.29-07.03.00:644][504]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Crystal_6)
-[2016.01.29-07.03.04:926][907]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Crystal_11)
-[2016.01.29-07.03.07:463][158]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Crystal_10)
-[2016.01.29-07.03.09:780][398]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Crystal_9)
-[2016.01.29-07.03.11:957][619]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Crystal_8)
-[2016.01.29-07.03.14:240][855]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-07.03.14:631][896]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Crystal_7)
-[2016.01.29-07.03.17:733][211]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-07.03.25:052][607]LogSavePackage: Save=1231.896851ms
-[2016.01.29-07.03.25:052][607]LogSavePackage: Moving '../../../../../../Herose-defend/Hero 4.10/Saved/Minimal_DefaultD20E55F14BA1BA65015CD09593A71B83.tmp' to '../../../../../../Herose-defend/Hero 4.10/Content/StarterContent/Maps/Minimal_Default.umap'
-[2016.01.29-07.03.25:058][607]LogSavePackage: Total save time: 1240.030937ms
-[2016.01.29-07.03.25:058][607]LogSavePackage:Display: Finished SavePackage ../../../../../../Herose-defend/Hero 4.10/Content/StarterContent/Maps/Minimal_Default.umap
-[2016.01.29-07.03.36:466][849]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.03.38:440][983]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.03.39:777][121]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.03.41:867][263]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.03.43:404][429]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-07.03.43:762][464]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-07.03.44:205][514]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-07.03.45:284][633]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.03.49:228][896]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.03.50:283][  6]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.03.50:953][ 48]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.03.51:747][127]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.03.52:761][190]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.03.55:305][470]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.03.56:821][567]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.03.58:118][701]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.03.59:243][774]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.00:250][878]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.01:166][936]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.02:120][ 36]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.02:701][ 71]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.03:548][159]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.04:623][227]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.05:500][317]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.07:003][414]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.07:942][508]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.08:989][576]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.10:132][695]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.11:766][803]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.12:870][919]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.13:758][973]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.14:660][ 64]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.15:682][128]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.16:925][260]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.18:086][331]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.18:847][408]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.19:659][458]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.22:884][732]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Pine_tree_25)
-[2016.01.29-07.04.23:075][742]Cmd: DELETE
-[2016.01.29-07.04.23:075][742]Cmd: ACTOR DELETE
-[2016.01.29-07.04.23:081][742]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-07.04.23:095][742]LogEditorActor: Deleted 1 Actors (0.021 secs)
-[2016.01.29-07.04.24:090][811]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Wall_9)
-[2016.01.29-07.04.24:939][900]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-07.04.28:133][ 86]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.29:791][205]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.30:768][305]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.31:587][362]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.32:468][452]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.33:601][531]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.34:501][621]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.35:532][694]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.42:764][117]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.43:702][173]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.45:071][251]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.45:621][284]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.04.46:403][363]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.47:027][403]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.49:658][553]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.50:539][609]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.51:244][672]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.52:323][743]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.04.53:230][798]Cmd: DELETE
-[2016.01.29-07.04.53:230][798]Cmd: ACTOR DELETE
-[2016.01.29-07.04.53:235][798]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-07.04.53:248][798]LogEditorActor: Deleted 1 Actors (0.017 secs)
-[2016.01.29-07.04.56:377][973]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Pine_tree38)
-[2016.01.29-07.04.57:322][ 72]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-07.05.00:110][210]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-07.05.00:815][286]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-07.05.08:786][845]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.10:449][958]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.11:599][ 78]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.12:507][139]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.13:315][222]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.14:295][287]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.15:082][365]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.16:057][431]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.17:352][521]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.18:213][578]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.19:697][666]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.20:535][724]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.21:666][791]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.22:643][858]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.23:457][944]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.05.24:807][ 37]LogActorFactory: Actor Factory created Pine_tree_2
-[2016.01.29-07.05.25:954][114]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.28:134][269]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.29:103][342]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.30:024][405]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.31:856][515]Cmd: DELETE
-[2016.01.29-07.05.31:856][515]Cmd: ACTOR DELETE
-[2016.01.29-07.05.31:862][515]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.01.29-07.05.31:873][515]LogEditorActor: Deleted 1 Actors (0.016 secs)
-[2016.01.29-07.05.32:479][584]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.33:260][646]LogActorFactory: Actor Factory created Pine_tree
-[2016.01.29-07.05.37:719][903]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-07.05.38:315][962]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-07.05.44:333][287]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-07.05.45:094][361]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2016.01.29-07.05.47:999][537]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Tile_348)
-[2016.01.29-07.05.48:444][575]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
-[2016.01.29-07.05.48:497][575]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Tile_348)
-[2016.01.29-07.05.49:267][654]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
-[2016.01.29-07.05.52:697][904]LogSavePackage: Save=1245.977417ms
-[2016.01.29-07.05.52:697][904]LogSavePackage: Moving '../../../../../../Herose-defend/Hero 4.10/Saved/Minimal_DefaultC5A1D1CB4D62BFAF08EEA498B490D53E.tmp' to '../../../../../../Herose-defend/Hero 4.10/Content/StarterContent/Maps/Minimal_Default.umap'
-[2016.01.29-07.05.52:703][904]LogSavePackage: Total save time: 1254.233573ms
-[2016.01.29-07.05.52:703][904]LogSavePackage:Display: Finished SavePackage ../../../../../../Herose-defend/Hero 4.10/Content/StarterContent/Maps/Minimal_Default.umap
-[2016.01.29-07.05.55:093][159]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
-[2016.01.29-07.05.55:616][160]Cmd: QUIT_EDITOR
-[2016.01.29-07.05.56:050][160]LogExit: Preparing to exit.
-[2016.01.29-07.05.57:461][160]LogExit: Editor shut down
-[2016.01.29-07.05.57:462][160]LogExit: Transaction tracking system shut down
-[2016.01.29-07.05.57:525][160]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000EFB7122C00
-[2016.01.29-07.05.57:527][160]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000EFBDE7F880
-[2016.01.29-07.05.57:527][160]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000EFD1C13EC0
-[2016.01.29-07.05.57:527][160]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000EFD3EA13A0
-[2016.01.29-07.06.00:724][160]LogExit: Object subsystem successfully closed.
-[2016.01.29-07.06.00:990][160]LogD3D11RHI: Shutdown
-[2016.01.29-07.06.00:990][160]LogD3D11RHI: CleanupD3DDevice
-[2016.01.29-07.06.01:183][160]LogD3D11RHI: ~FD3D11DynamicRHI
-[2016.01.29-07.06.02:732][160]LogModuleManager: Shutting down and abandoning module CookingStats (200)
-[2016.01.29-07.06.02:732][160]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (199)
-[2016.01.29-07.06.02:732][160]LogModuleManager: Shutting down and abandoning module CrashTracker (198)
-[2016.01.29-07.06.02:732][160]LogModuleManager: Shutting down and abandoning module SceneOutliner (197)
-[2016.01.29-07.06.02:732][160]LogModuleManager: Shutting down and abandoning module SuperSearch (196)
-[2016.01.29-07.06.02:732][160]LogModuleManager: Shutting down and abandoning module WidgetCarousel (195)
-[2016.01.29-07.06.02:764][160]LogModuleManager: Shutting down and abandoning module AddContentDialog (194)
-[2016.01.29-07.06.02:815][160]LogModuleManager: Shutting down and abandoning module EditorWidgets (193)
-[2016.01.29-07.06.02:815][160]LogModuleManager: Shutting down and abandoning module CollectionManager (192)
-[2016.01.29-07.06.02:900][160]LogModuleManager: Shutting down and abandoning module StatsViewer (191)
-[2016.01.29-07.06.03:049][160]LogModuleManager: Shutting down and abandoning module FoliageEdit (190)
-[2016.01.29-07.06.03:069][160]LogModuleManager: Shutting down and abandoning module LandscapeEditor (189)
-[2016.01.29-07.06.03:135][160]LogModuleManager: Shutting down and abandoning module ActorPickerMode (188)
-[2016.01.29-07.06.03:135][160]LogModuleManager: Shutting down and abandoning module GeometryMode (187)
-[2016.01.29-07.06.03:135][160]LogModuleManager: Shutting down and abandoning module TextureAlignMode (186)
-[2016.01.29-07.06.03:135][160]LogModuleManager: Shutting down and abandoning module BspMode (185)
-[2016.01.29-07.06.03:135][160]LogModuleManager: Shutting down and abandoning module PlacementMode (184)
-[2016.01.29-07.06.03:135][160]LogModuleManager: Shutting down and abandoning module AutomationWorker (183)
-[2016.01.29-07.06.03:149][160]LogModuleManager: Shutting down and abandoning module CharacterAI (182)
-[2016.01.29-07.06.03:149][160]LogModuleManager: Shutting down and abandoning module SmartSnapping (181)
-[2016.01.29-07.06.03:149][160]LogModuleManager: Shutting down and abandoning module ViewportSnapping (180)
-[2016.01.29-07.06.03:149][160]LogModuleManager: Shutting down and abandoning module LogVisualizer (179)
-[2016.01.29-07.06.03:294][160]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (178)
-[2016.01.29-07.06.03:445][160]LogModuleManager: Shutting down and abandoning module IntroTutorials (177)
-[2016.01.29-07.06.03:574][160]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (176)
-[2016.01.29-07.06.03:574][160]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (175)
-[2016.01.29-07.06.03:618][160]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (174)
-[2016.01.29-07.06.03:618][160]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (173)
-[2016.01.29-07.06.04:590][160]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (172)
-[2016.01.29-07.06.04:590][160]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (171)
-[2016.01.29-07.06.04:590][160]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (170)
-[2016.01.29-07.06.04:590][160]LogModuleManager: Shutting down and abandoning module MergeActors (169)
-[2016.01.29-07.06.04:631][160]LogModuleManager: Shutting down and abandoning module SizeMap (168)
-[2016.01.29-07.06.04:631][160]LogModuleManager: Shutting down and abandoning module TreeMap (167)
-[2016.01.29-07.06.04:689][160]LogModuleManager: Shutting down and abandoning module ReferenceViewer (166)
-[2016.01.29-07.06.04:723][160]LogModuleManager: Shutting down and abandoning module LocalizationService (165)
-[2016.01.29-07.06.04:723][160]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (164)
-[2016.01.29-07.06.04:786][160]LogModuleManager: Shutting down and abandoning module HardwareTargeting (163)
-[2016.01.29-07.06.04:816][160]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (162)
-[2016.01.29-07.06.04:874][160]LogModuleManager: Shutting down and abandoning module UndoHistory (161)
-[2016.01.29-07.06.04:900][160]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (160)
-[2016.01.29-07.06.04:931][160]LogModuleManager: Shutting down and abandoning module UserFeedback (159)
-[2016.01.29-07.06.04:931][160]LogModuleManager: Shutting down and abandoning module XmlParser (158)
-[2016.01.29-07.06.04:970][160]LogModuleManager: Shutting down and abandoning module Blutility (157)
-[2016.01.29-07.06.04:970][160]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (156)
-[2016.01.29-07.06.04:999][160]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (155)
-[2016.01.29-07.06.04:999][160]LogModuleManager: Shutting down and abandoning module InputBindingEditor (154)
-[2016.01.29-07.06.05:127][160]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (153)
-[2016.01.29-07.06.05:127][160]LogModuleManager: Shutting down and abandoning module SettingsEditor (152)
-[2016.01.29-07.06.05:287][160]LogModuleManager: Shutting down and abandoning module ProjectLauncher (151)
-[2016.01.29-07.06.05:341][160]LogModuleManager: Shutting down and abandoning module SessionFrontend (150)
-[2016.01.29-07.06.05:398][160]LogModuleManager: Shutting down and abandoning module ProfilerClient (149)
-[2016.01.29-07.06.05:462][160]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (148)
-[2016.01.29-07.06.05:477][160]LogModuleManager: Shutting down and abandoning module DeviceManager (147)
-[2016.01.29-07.06.05:499][160]LogModuleManager: Shutting down and abandoning module AutomationController (146)
-[2016.01.29-07.06.05:533][160]LogModuleManager: Shutting down and abandoning module AutomationWindow (145)
-[2016.01.29-07.06.05:556][160]LogModuleManager: Shutting down and abandoning module Layers (144)
-[2016.01.29-07.06.05:730][160]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (143)
-[2016.01.29-07.06.05:730][160]LogModuleManager: Shutting down and abandoning module DetailCustomizations (142)
-[2016.01.29-07.06.05:730][160]LogModuleManager: Shutting down and abandoning module PackagesDialog (141)
-[2016.01.29-07.06.05:730][160]LogModuleManager: Shutting down and abandoning module Persona (140)
-[2016.01.29-07.06.05:927][160]LogModuleManager: Shutting down and abandoning module Kismet (139)
-[2016.01.29-07.06.06:006][160]LogModuleManager: Shutting down and abandoning module GraphEditor (138)
-[2016.01.29-07.06.06:120][160]LogModuleManager: Shutting down and abandoning module ClassViewer (137)
-[2016.01.29-07.06.06:134][160]LogModuleManager: Shutting down and abandoning module Toolbox (136)
-[2016.01.29-07.06.06:134][160]LogModuleManager: Shutting down and abandoning module ModuleUI (135)
-[2016.01.29-07.06.06:134][160]LogModuleManager: Shutting down and abandoning module MovieSceneTools (134)
-[2016.01.29-07.06.06:173][160]LogModuleManager: Shutting down and abandoning module OutputLog (133)
-[2016.01.29-07.06.06:173][160]LogModuleManager: Shutting down and abandoning module GammaUI (132)
-[2016.01.29-07.06.06:190][160]LogModuleManager: Shutting down and abandoning module Documentation (131)
-[2016.01.29-07.06.06:190][160]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (130)
-[2016.01.29-07.06.06:212][160]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (129)
-[2016.01.29-07.06.06:212][160]LogModuleManager: Shutting down and abandoning module AnalyticsET (128)
-[2016.01.29-07.06.06:212][160]LogModuleManager: Shutting down and abandoning module Analytics (127)
-[2016.01.29-07.06.06:212][160]LogModuleManager: Shutting down and abandoning module AITestSuite (126)
-[2016.01.29-07.06.06:256][160]LogModuleManager: Shutting down and abandoning module GameplayDebugger (125)
-[2016.01.29-07.06.06:283][160]LogModuleManager: Shutting down and abandoning module AIModule (124)
-[2016.01.29-07.06.06:311][160]LogModuleManager: Shutting down and abandoning module ProfilerService (123)
-[2016.01.29-07.06.06:541][160]LogModuleManager: Shutting down and abandoning module TaskGraph (122)
-[2016.01.29-07.06.07:579][160]LogModuleManager: Shutting down and abandoning module SlateRemote (121)
-[2016.01.29-07.06.07:579][160]LogModuleManager: Shutting down and abandoning module SteamVRController (120)
-[2016.01.29-07.06.07:579][160]LogModuleManager: Shutting down and abandoning module SteamVR (119)
-[2016.01.29-07.06.07:579][160]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (118)
-[2016.01.29-07.06.07:579][160]LogModuleManager: Shutting down and abandoning module OculusLibrary (117)
-[2016.01.29-07.06.07:579][160]LogModuleManager: Shutting down and abandoning module OculusInput (116)
-[2016.01.29-07.06.07:579][160]LogModuleManager: Shutting down and abandoning module LeapMotionController (115)
-[2016.01.29-07.06.08:045][160]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (114)
-[2016.01.29-07.06.08:045][160]LogModuleManager: Shutting down and abandoning module CableComponent (113)
-[2016.01.29-07.06.08:059][160]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (112)
-[2016.01.29-07.06.08:059][160]LogModuleManager: Shutting down and abandoning module MessagingDebugger (111)
-[2016.01.29-07.06.08:310][160]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (110)
-[2016.01.29-07.06.08:478][160]LogModuleManager: Shutting down and abandoning module HTML5Networking (109)
-[2016.01.29-07.06.08:478][160]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (108)
-[2016.01.29-07.06.08:478][160]LogModuleManager: Shutting down and abandoning module PluginBrowser (107)
-[2016.01.29-07.06.08:528][160]LogModuleManager: Shutting down and abandoning module EpicSurvey (106)
-[2016.01.29-07.06.08:576][160]LogModuleManager: Shutting down and abandoning module DesktopPlatform (105)
-[2016.01.29-07.06.10:283][160]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (104)
-[2016.01.29-07.06.10:859][160]LogModuleManager: Shutting down and abandoning module UObjectPlugin (103)
-[2016.01.29-07.06.10:859][160]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (102)
-[2016.01.29-07.06.10:943][160]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (101)
-[2016.01.29-07.06.11:730][160]LogModuleManager: Shutting down and abandoning module SourceControl (100)
-[2016.01.29-07.06.11:829][160]LogModuleManager: Shutting down and abandoning module GitSourceControl (99)
-[2016.01.29-07.06.11:893][160]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (98)
-[2016.01.29-07.06.11:893][160]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (97)
-[2016.01.29-07.06.11:903][160]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (96)
-[2016.01.29-07.06.11:903][160]LogModuleManager: Shutting down and abandoning module MeshPaint (95)
-[2016.01.29-07.06.11:903][160]LogModuleManager: Shutting down and abandoning module SlateReflector (94)
-[2016.01.29-07.06.11:921][160]LogModuleManager: Shutting down and abandoning module HotReload (93)
-[2016.01.29-07.06.11:936][160]LogModuleManager: Shutting down and abandoning module MainFrame (92)
-[2016.01.29-07.06.11:936][160]LogModuleManager: Shutting down and abandoning module LevelEditor (91)
-[2016.01.29-07.06.11:948][160]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (90)
-[2016.01.29-07.06.11:962][160]LogModuleManager: Shutting down and abandoning module AssetRegistry (89)
-[2016.01.29-07.06.12:022][160]LogModuleManager: Shutting down and abandoning module ContentBrowser (88)
-[2016.01.29-07.06.12:022][160]LogModuleManager: Shutting down and abandoning module Paper2DEditor (87)
-[2016.01.29-07.06.12:157][160]LogModuleManager: Shutting down and abandoning module UdpMessaging (86)
-[2016.01.29-07.06.12:258][160]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (85)
-[2016.01.29-07.06.12:258][160]LogModuleManager: Shutting down and abandoning module Paper2D (84)
-[2016.01.29-07.06.12:279][160]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (83)
-[2016.01.29-07.06.12:328][160]LogModuleManager: Shutting down and abandoning module Media (82)
-[2016.01.29-07.06.12:328][160]LogModuleManager: Shutting down and abandoning module WmfMedia (81)
-[2016.01.29-07.06.12:353][160]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
-[2016.01.29-07.06.12:353][160]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (79)
-[2016.01.29-07.06.12:353][160]LogModuleManager: Shutting down and abandoning module PropertyEditor (78)
-[2016.01.29-07.06.12:353][160]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (77)
-[2016.01.29-07.06.12:380][160]LogModuleManager: Shutting down and abandoning module FunctionalTesting (76)
-[2016.01.29-07.06.12:380][160]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (75)
-[2016.01.29-07.06.12:396][160]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (74)
-[2016.01.29-07.06.12:396][160]LogModuleManager: Shutting down and abandoning module MessageLog (73)
-[2016.01.29-07.06.12:396][160]LogModuleManager: Shutting down and abandoning module Sequencer (72)
-[2016.01.29-07.06.12:424][160]LogModuleManager: Shutting down and abandoning module AssetTools (71)
-[2016.01.29-07.06.12:450][160]LogModuleManager: Shutting down and abandoning module UMGEditor (70)
-[2016.01.29-07.06.12:492][160]LogModuleManager: Shutting down and abandoning module UMG (69)
-[2016.01.29-07.06.12:518][160]LogModuleManager: Shutting down and abandoning module Slate (68)
-[2016.01.29-07.06.12:518][160]LogModuleManager: Shutting down and abandoning module EditorStyle (67)
-[2016.01.29-07.06.12:531][160]LogModuleManager: Shutting down and abandoning module SessionServices (66)
-[2016.01.29-07.06.12:531][160]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (65)
-[2016.01.29-07.06.12:531][160]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (64)
-[2016.01.29-07.06.12:531][160]LogModuleManager: Shutting down and abandoning module XAudio2 (63)
-[2016.01.29-07.06.12:531][160]LogModuleManager: Shutting down and abandoning module Networking (61)
-[2016.01.29-07.06.12:531][160]LogModuleManager: Shutting down and abandoning module Core (60)
-[2016.01.29-07.06.12:531][160]LogModuleManager: Shutting down and abandoning module KismetCompiler (59)
-[2016.01.29-07.06.12:531][160]LogModuleManager: Shutting down and abandoning module PhysXFormats (58)
-[2016.01.29-07.06.12:538][160]LogModuleManager: Shutting down and abandoning module MeshUtilities (57)
-[2016.01.29-07.06.12:561][160]LogModuleManager: Shutting down and abandoning module DerivedDataCache (56)
-[2016.01.29-07.06.12:662][160]LogDerivedDataCache: Shutdown
-[2016.01.29-07.06.12:662][160]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (55)
-[2016.01.29-07.06.12:685][160]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (54)
-[2016.01.29-07.06.12:697][160]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (53)
-[2016.01.29-07.06.12:724][160]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (52)
-[2016.01.29-07.06.12:724][160]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (51)
-[2016.01.29-07.06.12:736][160]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (50)
-[2016.01.29-07.06.12:742][160]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (49)
-[2016.01.29-07.06.12:742][160]LogModuleManager: Shutting down and abandoning module ImageWrapper (48)
-[2016.01.29-07.06.12:742][160]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (47)
-[2016.01.29-07.06.12:742][160]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (46)
-[2016.01.29-07.06.12:742][160]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (45)
-[2016.01.29-07.06.12:759][160]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (44)
-[2016.01.29-07.06.12:774][160]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (43)
-[2016.01.29-07.06.12:790][160]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (42)
-[2016.01.29-07.06.12:790][160]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (41)
-[2016.01.29-07.06.12:797][160]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (40)
-[2016.01.29-07.06.12:809][160]LogModuleManager: Shutting down and abandoning module Messaging (39)
-[2016.01.29-07.06.12:809][160]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
-[2016.01.29-07.06.12:809][160]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
-[2016.01.29-07.06.12:809][160]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
-[2016.01.29-07.06.12:809][160]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
-[2016.01.29-07.06.12:809][160]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
-[2016.01.29-07.06.12:809][160]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
-[2016.01.29-07.06.12:809][160]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
-[2016.01.29-07.06.12:809][160]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
-[2016.01.29-07.06.12:809][160]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
-[2016.01.29-07.06.12:809][160]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
-[2016.01.29-07.06.12:809][160]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
-[2016.01.29-07.06.12:809][160]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
-[2016.01.29-07.06.12:818][160]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
-[2016.01.29-07.06.12:833][160]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
-[2016.01.29-07.06.12:843][160]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
-[2016.01.29-07.06.12:843][160]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
-[2016.01.29-07.06.12:843][160]LogModuleManager: Shutting down and abandoning module InputCore (22)
-[2016.01.29-07.06.12:843][160]LogModuleManager: Shutting down and abandoning module Settings (21)
-[2016.01.29-07.06.12:843][160]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
-[2016.01.29-07.06.12:843][160]LogModuleManager: Shutting down and abandoning module HTTP (18)
-[2016.01.29-07.06.14:877][160]LogModuleManager: Shutting down and abandoning module XMPP (17)
-[2016.01.29-07.06.14:895][160]LogModuleManager: Shutting down and abandoning module OculusRift (16)
-[2016.01.29-07.06.14:914][160]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
-[2016.01.29-07.06.14:914][160]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2016.01.29-07.06.14:914][160]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2016.01.29-07.06.14:914][160]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2016.01.29-07.06.14:914][160]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2016.01.29-07.06.14:935][160]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2016.01.29-07.06.14:954][160]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2016.01.29-07.06.14:954][160]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2016.01.29-07.06.14:962][160]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2016.01.29-07.06.14:962][160]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2016.01.29-07.06.14:962][160]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2016.01.29-07.06.14:962][160]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2016.01.29-07.06.14:993][160]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2016.01.29-07.06.15:007][160]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2016.01.29-07.06.15:013][160]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2016.01.29-07.06.15:032][160]LogExit: Exiting.
-[2016.01.29-07.06.15:042][160]Log file closed, 01/29/16 16:06:15
+[2016.02.01-07.27.09:830][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:BlendWeight):
+Localization Resource: (F:/Epic Games/4.10/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 마지막 걸린 블렌드웨이트 입니다.)
+Localization Resource: (F:/Epic Games/4.10/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 대해 마지막 접한 블렌드 웨이트)
+[2016.02.01-07.27.10:066][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 970 (Feature Level 11_0)
+[2016.02.01-07.27.10:066][  0]LogD3D11RHI: Adapter has 4007MB of dedicated video memory, 0MB of dedicated system memory, and 3831MB of shared system memory, 2 output[s]
+[2016.02.01-07.27.10:066][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.02.01-07.27.10:073][  0]LogD3D11RHI: !Direct3DDevice
+[2016.02.01-07.27.10:073][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.02.01-07.27.10:085][  0]LogD3D11RHI: Async texture creation enabled
+[2016.02.01-07.27.10:095][  0]LogShaderCompilers: Guid format shader working directory is 4 characters bigger than the processId version (../../../../../실무/Herose-defend/Hero 4.10/Intermediate/Shaders/WorkingDirectory/252/).
+[2016.02.01-07.27.10:095][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/SGH/AppData/Local/Temp/UnrealShaderWorkingDir/A0084F1F43BE7449C8B07AB15E5653BA/'.
+[2016.02.01-07.27.10:095][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.02.01-07.27.11:719][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.02.01-07.27.11:724][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.02.01-07.27.11:729][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.02.01-07.27.11:740][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.02.01-07.27.11:745][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.02.01-07.27.11:752][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.02.01-07.27.11:755][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.02.01-07.27.11:758][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.02.01-07.27.11:761][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.02.01-07.27.11:767][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.02.01-07.27.11:771][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.02.01-07.27.11:778][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.02.01-07.27.11:778][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.02.01-07.27.11:779][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.02.01-07.27.11:834][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.02.01-07.27.11:837][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.02.01-07.27.11:840][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.02.01-07.27.11:844][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.02.01-07.27.11:844][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.02.01-07.27.12:259][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.02.01-07.27.12:354][  0]LogDerivedDataCache: Loaded boot cache 0.09s 41MB C:/Users/SGH/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.02.01-07.27.12:354][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/SGH/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
+[2016.02.01-07.27.12:354][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../실무/Herose-defend/Hero 4.10/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.02.01-07.27.12:354][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.02.01-07.27.12:354][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../실무/Herose-defend/Hero 4.10/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.02.01-07.27.12:354][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.02.01-07.27.12:426][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.02.01-07.27.12:438][  0]LogDerivedDataCache: Using Local data cache path C:/Users/SGH/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.02.01-07.27.17:130][  0]LogInit: Selected Device Profile: [Windows]
+[2016.02.01-07.27.17:130][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.02.01-07.27.17:182][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.02.01-07.27.17:182][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.02.01-07.27.17:741][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.02.01-07.27.20:194][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.02.01-07.27.20:342][  0]LogAssetRegistry: FAssetRegistry took 0.0107 seconds to start up
+[2016.02.01-07.27.20:587][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2016.02.01-07.27.20:588][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2016.02.01-07.27.20:601][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2016.02.01-07.27.20:615][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2016.02.01-07.27.20:985][  0]LogObj: 28633 objects as part of root set at end of initial load.
+[2016.02.01-07.27.20:985][  0]LogUObjectAllocator: 6099752 out of 0 bytes used by permanent object pool.
+[2016.02.01-07.27.21:054][  0]LogEngine: Initializing Engine...
+[2016.02.01-07.27.21:058][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.02.01-07.27.21:062][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.02.01-07.27.21:257][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.02.01-07.27.21:272][  0]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.02.01-07.27.21:291][  0]LogInit: FAudioDevice initialized.
+[2016.02.01-07.27.21:338][  0]LogDerivedDataCache: Saved boot cache 0.05s 41MB C:/Users/SGH/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.02.01-07.27.21:354][  0]LogInit: Texture streaming: Enabled
+[2016.02.01-07.27.21:363][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2016.02.01-07.27.21:363][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.2-2818068+++depot+UE4-Releases+4.10
+[2016.02.01-07.27.21:363][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId c116ab95452d6c0e6a5d46a2885b9fb5|1ee373e9bedc4d7e9c76f780c6814fe5|3c1af846-1ffe-4ccd-87ea-0d3770034fd8
+[2016.02.01-07.27.21:363][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2016.02.01-07.27.21:374][  0]LogInit: Transaction tracking system initialized
+[2016.02.01-07.27.21:412][  0]BlueprintLog: New page: 에디터 로드
+[2016.02.01-07.27.21:520][  0]LocalizationService: 정보 현지화 서비스가 비활성화되었습니다.
+[2016.02.01-07.27.21:611][  0]LogLinker:Warning: '/Game/ThirdPersonBP/ThirdPersonOverview' 파일을 찾을 수 없습니다.
+[2016.02.01-07.27.21:611][  0]LogLinker:Warning: '/Game/ThirdPersonBP/ThirdPersonOverview' 파일을 찾을 수 없습니다.
+[2016.02.01-07.27.21:611][  0]LogUObjectGlobals:Warning: 'Class /Game/ThirdPersonBP/ThirdPersonOverview.ThirdPersonOverview_C' 오브젝트를 찾는 데 실패했습니다.
+[2016.02.01-07.27.21:630][  0]LogConsoleResponse:Display: 
+[2016.02.01-07.27.21:796][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.02.01-07.27.21:884][  0]LogFileCache: Scanning file cache for directory 'F:/실무/Herose-defend/Hero 4.10/Content/' took 0.02s
+[2016.02.01-07.27.21:884][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2016.02.01-07.27.21:884][  0]Cmd: MAP LOAD FILE="../../../../../실무/Herose-defend/Hero 4.10/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.02.01-07.27.21:887][  0]LightingResults: New page: 라이팅 빌드
+[2016.02.01-07.27.21:893][  0]MapCheck: New page: 맵 체크
+[2016.02.01-07.27.21:893][  0]LightingResults: New page: 라이팅 빌드
+[2016.02.01-07.27.21:906][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000023363740
+[2016.02.01-07.27.24:221][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.02.01-07.27.24:439][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.02.01-07.27.24:440][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.02.01-07.27.24:550][  0]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 109.906ms.
+[2016.02.01-07.27.24:550][  0]LogFileHelpers: Loading map 'Minimal_Default' took 2.666
+[2016.02.01-07.27.24:782][  0]LogCollectionManager: Loaded 0 collections in 0.003455 seconds
+[2016.02.01-07.27.24:828][  0]LogFileCache: Scanning file cache for directory 'F:/실무/Herose-defend/Hero 4.10/Saved/Collections/' took 0.01s
+[2016.02.01-07.27.24:828][  0]LogFileCache: Scanning file cache for directory 'F:/실무/Herose-defend/Hero 4.10/Content/Developers/SGH/Collections/' took 0.01s
+[2016.02.01-07.27.24:828][  0]LogFileCache: Scanning file cache for directory 'F:/실무/Herose-defend/Hero 4.10/Content/Collections/' took 0.01s
+[2016.02.01-07.27.24:828][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2016.02.01-07.27.24:837][  0]LogContentBrowser: Native class hierarchy populated in 0.0087 seconds. Added 1893 classes and 338 folders.
+[2016.02.01-07.27.24:852][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2016.02.01-07.27.26:064][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2016.02.01-07.27.26:071][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.02.01-07.27.26:124][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.02.01-07.27.26:129][  0]LogUObjectGlobals:Warning: 'Class 없음.' 오브젝트를 찾는 데 실패했습니다.
+[2016.02.01-07.27.26:151][  0]LogLoad: Full Startup: 17.35 seconds (BP compile: 0.11 seconds)
+[2016.02.01-07.27.26:167][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.02.01-07.27.26:232][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.02.01-07.27.26:492][  0]LogRenderer: Reallocating scene render targets to support 1156x688 (Frame:2).
+[2016.02.01-07.27.26:586][  1]Cmd: UpdateLandscapeEditorData -warnings
+[2016.02.01-07.27.27:559][  7]LogAssetRegistry: Asset discovery search completed in 7.2278 seconds
+[2016.02.01-07.27.27:559][  7]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000004 seconds (found 0 objects)
+[2016.02.01-07.27.27:559][  7]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000053 seconds (updated 0 objects)
+[2016.02.01-07.44.35:620][521]Cmd: QUIT_EDITOR
+[2016.02.01-07.44.35:744][521]LogExit: Preparing to exit.
+[2016.02.01-07.44.36:435][521]LogExit: Editor shut down
+[2016.02.01-07.44.36:435][521]LogExit: Transaction tracking system shut down
+[2016.02.01-07.44.36:438][521]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002B5CB420
+[2016.02.01-07.44.36:443][521]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000030878860
+[2016.02.01-07.44.36:443][521]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000035F4B060
+[2016.02.01-07.44.36:583][521]LogExit: Object subsystem successfully closed.
+[2016.02.01-07.44.36:596][521]LogD3D11RHI: Shutdown
+[2016.02.01-07.44.36:596][521]LogD3D11RHI: CleanupD3DDevice
+[2016.02.01-07.44.36:658][521]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.02.01-07.44.36:672][521]LogModuleManager: Shutting down and abandoning module CrashTracker (198)
+[2016.02.01-07.44.36:672][521]LogModuleManager: Shutting down and abandoning module SceneOutliner (197)
+[2016.02.01-07.44.36:672][521]LogModuleManager: Shutting down and abandoning module SuperSearch (196)
+[2016.02.01-07.44.36:672][521]LogModuleManager: Shutting down and abandoning module WidgetCarousel (195)
+[2016.02.01-07.44.36:672][521]LogModuleManager: Shutting down and abandoning module AddContentDialog (194)
+[2016.02.01-07.44.36:674][521]LogModuleManager: Shutting down and abandoning module EditorWidgets (193)
+[2016.02.01-07.44.36:674][521]LogModuleManager: Shutting down and abandoning module CollectionManager (192)
+[2016.02.01-07.44.36:674][521]LogModuleManager: Shutting down and abandoning module StatsViewer (191)
+[2016.02.01-07.44.36:674][521]LogModuleManager: Shutting down and abandoning module FoliageEdit (190)
+[2016.02.01-07.44.36:674][521]LogModuleManager: Shutting down and abandoning module LandscapeEditor (189)
+[2016.02.01-07.44.36:674][521]LogModuleManager: Shutting down and abandoning module ActorPickerMode (188)
+[2016.02.01-07.44.36:674][521]LogModuleManager: Shutting down and abandoning module GeometryMode (187)
+[2016.02.01-07.44.36:674][521]LogModuleManager: Shutting down and abandoning module TextureAlignMode (186)
+[2016.02.01-07.44.36:674][521]LogModuleManager: Shutting down and abandoning module BspMode (185)
+[2016.02.01-07.44.36:674][521]LogModuleManager: Shutting down and abandoning module PlacementMode (184)
+[2016.02.01-07.44.36:674][521]LogModuleManager: Shutting down and abandoning module AutomationWorker (183)
+[2016.02.01-07.44.36:674][521]LogModuleManager: Shutting down and abandoning module CharacterAI (182)
+[2016.02.01-07.44.36:674][521]LogModuleManager: Shutting down and abandoning module SmartSnapping (181)
+[2016.02.01-07.44.36:674][521]LogModuleManager: Shutting down and abandoning module ViewportSnapping (180)
+[2016.02.01-07.44.36:674][521]LogModuleManager: Shutting down and abandoning module LogVisualizer (179)
+[2016.02.01-07.44.36:675][521]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (178)
+[2016.02.01-07.44.36:675][521]LogModuleManager: Shutting down and abandoning module IntroTutorials (177)
+[2016.02.01-07.44.36:675][521]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (176)
+[2016.02.01-07.44.36:675][521]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (175)
+[2016.02.01-07.44.36:675][521]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (174)
+[2016.02.01-07.44.36:675][521]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (173)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (172)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (171)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (170)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module MergeActors (169)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module SizeMap (168)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module TreeMap (167)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module ReferenceViewer (166)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module LocalizationService (165)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (164)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module HardwareTargeting (163)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (162)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module UndoHistory (161)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (160)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module UserFeedback (159)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module XmlParser (158)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module Blutility (157)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (156)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (155)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module InputBindingEditor (154)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (153)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module SettingsEditor (152)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module ProjectLauncher (151)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module SessionFrontend (150)
+[2016.02.01-07.44.36:677][521]LogModuleManager: Shutting down and abandoning module ProfilerClient (149)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (148)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module DeviceManager (147)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module AutomationController (146)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module AutomationWindow (145)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module Layers (144)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (143)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module DetailCustomizations (142)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module PackagesDialog (141)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module Persona (140)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module Kismet (139)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module GraphEditor (138)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module ClassViewer (137)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module Toolbox (136)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module ModuleUI (135)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module MovieSceneTools (134)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module OutputLog (133)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module GammaUI (132)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module Documentation (131)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (130)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (129)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module AnalyticsET (128)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module Analytics (127)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module AITestSuite (126)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module GameplayDebugger (125)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module AIModule (124)
+[2016.02.01-07.44.36:678][521]LogModuleManager: Shutting down and abandoning module ProfilerService (123)
+[2016.02.01-07.44.36:716][521]LogModuleManager: Shutting down and abandoning module TaskGraph (122)
+[2016.02.01-07.44.36:716][521]LogModuleManager: Shutting down and abandoning module SlateRemote (121)
+[2016.02.01-07.44.36:716][521]LogModuleManager: Shutting down and abandoning module SteamVRController (120)
+[2016.02.01-07.44.36:716][521]LogModuleManager: Shutting down and abandoning module SteamVR (119)
+[2016.02.01-07.44.36:716][521]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (118)
+[2016.02.01-07.44.36:716][521]LogModuleManager: Shutting down and abandoning module OculusLibrary (117)
+[2016.02.01-07.44.36:716][521]LogModuleManager: Shutting down and abandoning module OculusInput (116)
+[2016.02.01-07.44.36:716][521]LogModuleManager: Shutting down and abandoning module LeapMotionController (115)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (114)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module CableComponent (113)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (112)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module MessagingDebugger (111)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (110)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module HTML5Networking (109)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (108)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module PluginBrowser (107)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module EpicSurvey (106)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module DesktopPlatform (105)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (104)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module UObjectPlugin (103)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (102)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (101)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module SourceControl (100)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module GitSourceControl (99)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (98)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (97)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (96)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module MeshPaint (95)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module SlateReflector (94)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module HotReload (93)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module MainFrame (92)
+[2016.02.01-07.44.36:724][521]LogModuleManager: Shutting down and abandoning module LevelEditor (91)
+[2016.02.01-07.44.36:725][521]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (90)
+[2016.02.01-07.44.36:726][521]LogModuleManager: Shutting down and abandoning module AssetRegistry (89)
+[2016.02.01-07.44.36:864][521]LogModuleManager: Shutting down and abandoning module ContentBrowser (88)
+[2016.02.01-07.44.36:864][521]LogModuleManager: Shutting down and abandoning module Paper2DEditor (87)
+[2016.02.01-07.44.36:865][521]LogModuleManager: Shutting down and abandoning module UdpMessaging (86)
+[2016.02.01-07.44.36:965][521]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (85)
+[2016.02.01-07.44.36:965][521]LogModuleManager: Shutting down and abandoning module Paper2D (84)
+[2016.02.01-07.44.36:965][521]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (83)
+[2016.02.01-07.44.36:968][521]LogModuleManager: Shutting down and abandoning module Media (82)
+[2016.02.01-07.44.36:968][521]LogModuleManager: Shutting down and abandoning module WmfMedia (81)
+[2016.02.01-07.44.36:969][521]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
+[2016.02.01-07.44.36:969][521]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (79)
+[2016.02.01-07.44.36:969][521]LogModuleManager: Shutting down and abandoning module PropertyEditor (78)
+[2016.02.01-07.44.36:969][521]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (77)
+[2016.02.01-07.44.36:969][521]LogModuleManager: Shutting down and abandoning module FunctionalTesting (76)
+[2016.02.01-07.44.36:969][521]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (75)
+[2016.02.01-07.44.36:969][521]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (74)
+[2016.02.01-07.44.36:969][521]LogModuleManager: Shutting down and abandoning module MessageLog (73)
+[2016.02.01-07.44.36:969][521]LogModuleManager: Shutting down and abandoning module Sequencer (72)
+[2016.02.01-07.44.36:969][521]LogModuleManager: Shutting down and abandoning module AssetTools (71)
+[2016.02.01-07.44.36:969][521]LogModuleManager: Shutting down and abandoning module UMGEditor (70)
+[2016.02.01-07.44.36:969][521]LogModuleManager: Shutting down and abandoning module UMG (69)
+[2016.02.01-07.44.36:969][521]LogModuleManager: Shutting down and abandoning module Slate (68)
+[2016.02.01-07.44.36:969][521]LogModuleManager: Shutting down and abandoning module EditorStyle (67)
+[2016.02.01-07.44.36:971][521]LogModuleManager: Shutting down and abandoning module SessionServices (66)
+[2016.02.01-07.44.36:971][521]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (65)
+[2016.02.01-07.44.36:971][521]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (64)
+[2016.02.01-07.44.36:971][521]LogModuleManager: Shutting down and abandoning module XAudio2 (63)
+[2016.02.01-07.44.36:971][521]LogModuleManager: Shutting down and abandoning module Networking (61)
+[2016.02.01-07.44.36:971][521]LogModuleManager: Shutting down and abandoning module Core (60)
+[2016.02.01-07.44.36:971][521]LogModuleManager: Shutting down and abandoning module KismetCompiler (59)
+[2016.02.01-07.44.36:971][521]LogModuleManager: Shutting down and abandoning module PhysXFormats (58)
+[2016.02.01-07.44.36:971][521]LogModuleManager: Shutting down and abandoning module MeshUtilities (57)
+[2016.02.01-07.44.36:971][521]LogModuleManager: Shutting down and abandoning module DerivedDataCache (56)
+[2016.02.01-07.44.37:008][521]LogDerivedDataCache: Shutdown
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (55)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (54)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (53)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (52)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (51)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (50)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (49)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module ImageWrapper (48)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (47)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (46)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (45)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (44)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (43)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (42)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (41)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (40)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.02.01-07.44.37:008][521]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.02.01-07.44.39:009][521]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.02.01-07.44.39:009][521]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.02.01-07.44.39:009][521]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.02.01-07.44.39:009][521]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.02.01-07.44.39:009][521]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.02.01-07.44.39:009][521]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.02.01-07.44.39:009][521]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.02.01-07.44.39:011][521]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.02.01-07.44.39:011][521]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.02.01-07.44.39:011][521]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.02.01-07.44.39:011][521]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.02.01-07.44.39:011][521]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.02.01-07.44.39:011][521]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.02.01-07.44.39:011][521]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.02.01-07.44.39:011][521]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.02.01-07.44.39:011][521]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.02.01-07.44.39:011][521]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.02.01-07.44.39:013][521]LogExit: Exiting.
+[2016.02.01-07.44.39:014][521]Log file closed, 02/01/16 16:44:39
